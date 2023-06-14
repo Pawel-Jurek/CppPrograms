@@ -1,0 +1,155 @@
+\begin{theindex}
+
+  \item {C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/funkcje.cpp}, 
+		\hyperpage{7}
+  \item {C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/funkcje.h}, 
+		\hyperpage{15}, \hyperpage{23}
+  \item {C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/main.cpp}, 
+		\hyperpage{24}
+  \item {czytaj\_Parametry}
+    \subitem {funkcje.cpp}, \hyperpage{8}
+    \subitem {funkcje.h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {decyzjator}
+    \subitem {funkcje.cpp}, \hyperpage{8}
+    \subitem {funkcje.h}, \hyperpage{16}
+  \item {deszyfrowanie}
+    \subitem {funkcje.cpp}, \hyperpage{8}
+    \subitem {funkcje.h}, \hyperpage{17}
+  \item {deszyfrowanie\_znaku}
+    \subitem {funkcje.cpp}, \hyperpage{9}
+    \subitem {funkcje.h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {filtrowanie\_tekstu}
+    \subitem {funkcje.cpp}, \hyperpage{9}
+    \subitem {funkcje.h}, \hyperpage{17}
+  \item {flaga\_dzialania}
+    \subitem {Params}, \hyperpage{5}
+  \item {funkcje.cpp}
+    \subitem {czytaj\_Parametry}, \hyperpage{8}
+    \subitem {decyzjator}, \hyperpage{8}
+    \subitem {deszyfrowanie}, \hyperpage{8}
+    \subitem {deszyfrowanie\_znaku}, \hyperpage{9}
+    \subitem {filtrowanie\_tekstu}, \hyperpage{9}
+    \subitem {komparator\_klucza}, \hyperpage{9}
+    \subitem {komparator\_wartosci}, \hyperpage{10}
+    \subitem {lamanie\_kodu}, \hyperpage{10}
+    \subitem {NWD}, \hyperpage{11}
+    \subitem {NWDv2}, \hyperpage{11}
+    \subitem {pomoc}, \hyperpage{11}
+    \subitem {sortuj}, \hyperpage{12}
+    \subitem {szyfrowanie}, \hyperpage{12}
+    \subitem {szyfrowanie\_znaku}, \hyperpage{12}
+    \subitem {wczytaj\_plik}, \hyperpage{13}
+    \subitem {wyznacz\_znak\_klucza}, \hyperpage{13}
+    \subitem {wyznaczanie\_ciagow}, \hyperpage{13}
+    \subitem {wyznaczanie\_dlugosci\_klucza}, \hyperpage{14}
+    \subitem {wyznaczanie\_klucza}, \hyperpage{14}
+    \subitem {wyznaczanie\_roznic}, \hyperpage{15}
+  \item {funkcje.h}
+    \subitem {czytaj\_Parametry}, \hyperpage{16}
+    \subitem {decyzjator}, \hyperpage{16}
+    \subitem {deszyfrowanie}, \hyperpage{17}
+    \subitem {deszyfrowanie\_znaku}, \hyperpage{17}
+    \subitem {filtrowanie\_tekstu}, \hyperpage{17}
+    \subitem {komparator\_klucza}, \hyperpage{18}
+    \subitem {komparator\_wartosci}, \hyperpage{18}
+    \subitem {lamanie\_kodu}, \hyperpage{18}
+    \subitem {NWD}, \hyperpage{19}
+    \subitem {NWDv2}, \hyperpage{19}
+    \subitem {pomoc}, \hyperpage{20}
+    \subitem {sortuj}, \hyperpage{20}
+    \subitem {szyfrowanie}, \hyperpage{20}
+    \subitem {szyfrowanie\_znaku}, \hyperpage{21}
+    \subitem {wczytaj\_plik}, \hyperpage{21}
+    \subitem {wyznacz\_znak\_klucza}, \hyperpage{21}
+    \subitem {wyznaczanie\_ciagow}, \hyperpage{22}
+    \subitem {wyznaczanie\_dlugosci\_klucza}, \hyperpage{22}
+    \subitem {wyznaczanie\_klucza}, \hyperpage{22}
+    \subitem {wyznaczanie\_roznic}, \hyperpage{23}
+
+  \indexspace
+
+  \item {inputFile}
+    \subitem {Params}, \hyperpage{5}
+
+  \indexspace
+
+  \item {kluczFile}
+    \subitem {Params}, \hyperpage{5}
+  \item {komparator\_klucza}
+    \subitem {funkcje.cpp}, \hyperpage{9}
+    \subitem {funkcje.h}, \hyperpage{18}
+  \item {komparator\_wartosci}
+    \subitem {funkcje.cpp}, \hyperpage{10}
+    \subitem {funkcje.h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {lamanie\_kodu}
+    \subitem {funkcje.cpp}, \hyperpage{10}
+    \subitem {funkcje.h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {NWD}
+    \subitem {funkcje.cpp}, \hyperpage{11}
+    \subitem {funkcje.h}, \hyperpage{19}
+  \item {NWDv2}
+    \subitem {funkcje.cpp}, \hyperpage{11}
+    \subitem {funkcje.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {outputFile}
+    \subitem {Params}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Params}, \hyperpage{5}
+    \subitem {flaga\_dzialania}, \hyperpage{5}
+    \subitem {inputFile}, \hyperpage{5}
+    \subitem {kluczFile}, \hyperpage{5}
+    \subitem {outputFile}, \hyperpage{6}
+  \item {pomoc}
+    \subitem {funkcje.cpp}, \hyperpage{11}
+    \subitem {funkcje.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {sortuj}
+    \subitem {funkcje.cpp}, \hyperpage{12}
+    \subitem {funkcje.h}, \hyperpage{20}
+  \item {szyfrowanie}
+    \subitem {funkcje.cpp}, \hyperpage{12}
+    \subitem {funkcje.h}, \hyperpage{20}
+  \item {szyfrowanie\_znaku}
+    \subitem {funkcje.cpp}, \hyperpage{12}
+    \subitem {funkcje.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {wczytaj\_plik}
+    \subitem {funkcje.cpp}, \hyperpage{13}
+    \subitem {funkcje.h}, \hyperpage{21}
+  \item {wyznacz\_znak\_klucza}
+    \subitem {funkcje.cpp}, \hyperpage{13}
+    \subitem {funkcje.h}, \hyperpage{21}
+  \item {wyznaczanie\_ciagow}
+    \subitem {funkcje.cpp}, \hyperpage{13}
+    \subitem {funkcje.h}, \hyperpage{22}
+  \item {wyznaczanie\_dlugosci\_klucza}
+    \subitem {funkcje.cpp}, \hyperpage{14}
+    \subitem {funkcje.h}, \hyperpage{22}
+  \item {wyznaczanie\_klucza}
+    \subitem {funkcje.cpp}, \hyperpage{14}
+    \subitem {funkcje.h}, \hyperpage{22}
+  \item {wyznaczanie\_roznic}
+    \subitem {funkcje.cpp}, \hyperpage{15}
+    \subitem {funkcje.h}, \hyperpage{23}
+
+\end{theindex}

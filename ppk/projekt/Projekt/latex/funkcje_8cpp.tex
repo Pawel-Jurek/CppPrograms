@@ -1,0 +1,353 @@
+\hypertarget{funkcje_8cpp}{}\doxysection{Dokumentacja pliku C\+:/\+Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/\+Projekt/funkcje.cpp}
+\label{funkcje_8cpp}\index{C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/funkcje.cpp@{C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/funkcje.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}funkcje.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{funkcje_8cpp_adaf00ec439a13d3d2ca987e942c523cb}{czytaj\+\_\+\+Parametry}} (int argc, char $\ast$$\ast$argv, \mbox{\hyperlink{struct_params}{Params}} \&params)
+\item 
+void \mbox{\hyperlink{funkcje_8cpp_a9950644cd912caa7988d1b3a58a65dad}{pomoc}} (const std\+::string \&prog\+Name)
+\item 
+void \mbox{\hyperlink{funkcje_8cpp_a81c1bc362cc3de97420608f0edc2e3da}{szyfrowanie\+\_\+znaku}} (char \&znak\+\_\+tekstu, const std\+::string \&klucz, int \&licznik\+\_\+klucza)
+\item 
+void \mbox{\hyperlink{funkcje_8cpp_ad27641da98891606840d52eee123af9c}{deszyfrowanie\+\_\+znaku}} (std\+::string klucz, char \&znak\+\_\+tekstu, int \&licznik\+\_\+klucza)
+\item 
+std\+::string \mbox{\hyperlink{funkcje_8cpp_aac8a4827bf3e32399476e377eaeebc85}{szyfrowanie}} (const \mbox{\hyperlink{struct_params}{Params}} \&params)
+\item 
+std\+::string \mbox{\hyperlink{funkcje_8cpp_a7c5db7b11a0b48f67932fa3c4467e6f4}{wczytaj\+\_\+plik}} (std\+::string nazwa\+\_\+pliku)
+\item 
+std\+::string \mbox{\hyperlink{funkcje_8cpp_a72c827aa3dcbd6cea794db636da15853}{deszyfrowanie}} (\mbox{\hyperlink{struct_params}{Params}} \&params)
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{funkcje_8cpp_a758866a111f50c43d17e77283c6834dd}{wyznaczanie\+\_\+ciagow}} (std\+::string \&tekst)
+\item 
+int \mbox{\hyperlink{funkcje_8cpp_aa1aa30db98666e5013db00600f1359bd}{NWD}} (int a, int b)
+\item 
+bool \mbox{\hyperlink{funkcje_8cpp_a0a55a03cabf2db62794f95b1a51bf8dc}{komparator\+\_\+klucza}} (const std\+::pair$<$ int, int $>$ \&a, const std\+::pair$<$ int, int $>$ \&b)
+\item 
+bool \mbox{\hyperlink{funkcje_8cpp_a8b64db9d5403fcde687ec2bd3b2e8f09}{komparator\+\_\+wartosci}} (const std\+::pair$<$ int, int $>$ \&a, const std\+::pair$<$ int, int $>$ \&b)
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \mbox{\hyperlink{funkcje_8cpp_a6e54632e64dbb7bb3fe75b734078b779}{sortuj}} (std\+::map$<$ int, int $>$ \&mapa)
+\item 
+int \mbox{\hyperlink{funkcje_8cpp_a433cb84073dea919f6ca12f06949fd12}{NWDv2}} (std\+::vector$<$ int $>$ \&liczby)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{funkcje_8cpp_a1d00802f84584bc981438378ff288bbd}{wyznaczanie\+\_\+roznic}} (std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ int $>$ $>$ \&slowa)
+\item 
+int \mbox{\hyperlink{funkcje_8cpp_a50166a2628b455ad1d998efbebe79013}{wyznaczanie\+\_\+dlugosci\+\_\+klucza}} (std\+::vector$<$ std\+::string $>$ \&ciagi)
+\item 
+std\+::string \mbox{\hyperlink{funkcje_8cpp_ac4bec1d296cc1bee91802d66d6e3cb28}{filtrowanie\+\_\+tekstu}} (std\+::string tekst)
+\item 
+char \mbox{\hyperlink{funkcje_8cpp_a03e900f988f3e271cec424db293cf72f}{wyznacz\+\_\+znak\+\_\+klucza}} (std\+::string \&tekst, int dlugosc\+\_\+klucza, int poz\+\_\+klucza)
+\item 
+std\+::string \mbox{\hyperlink{funkcje_8cpp_ad47349e065f01957cc4d7592ead3d0c5}{wyznaczanie\+\_\+klucza}} (std\+::string \&tekst, int dlugosc\+\_\+klucza)
+\item 
+std\+::string \mbox{\hyperlink{funkcje_8cpp_a6b64c764eae4d4143365579a694631ba}{lamanie\+\_\+kodu}} (\mbox{\hyperlink{struct_params}{Params}} \&params)
+\item 
+bool \mbox{\hyperlink{funkcje_8cpp_a88ffc4b54f2e295ce65d3837ca674943}{decyzjator}} (\mbox{\hyperlink{struct_params}{Params}} \&params)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{funkcje_8cpp_adaf00ec439a13d3d2ca987e942c523cb}\label{funkcje_8cpp_adaf00ec439a13d3d2ca987e942c523cb}} 
+\index{funkcje.cpp@{funkcje.cpp}!czytaj\_Parametry@{czytaj\_Parametry}}
+\index{czytaj\_Parametry@{czytaj\_Parametry}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{czytaj\_Parametry()}{czytaj\_Parametry()}}
+{\footnotesize\ttfamily bool czytaj\+\_\+\+Parametry (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{\mbox{\hyperlink{struct_params}{Params}} \&}]{params }\end{DoxyParamCaption})}
+
+Funkcja zczytująca parametry do programu i zapisująca je do struktury 
+\begin{DoxyParams}{Parametry}
+{\em argc} & wartości parametrów z którymi został wywołany program \\
+\hline
+{\em argv} & tablica tych wartości \\
+\hline
+{\em params} & struktura do której zapisywane są parametry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca true, jeżeli program został wywołany z odpowiednimi parametrami. W przeciwnym razie zwraca false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a88ffc4b54f2e295ce65d3837ca674943}\label{funkcje_8cpp_a88ffc4b54f2e295ce65d3837ca674943}} 
+\index{funkcje.cpp@{funkcje.cpp}!decyzjator@{decyzjator}}
+\index{decyzjator@{decyzjator}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{decyzjator()}{decyzjator()}}
+{\footnotesize\ttfamily bool decyzjator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_params}{Params}} \&}]{params }\end{DoxyParamCaption})}
+
+Główna funkcja sterująca. Decyduje, którą z operacji będziemy wykonywać na podstawie parametrów wejściowych 
+\begin{DoxyParams}{Parametry}
+{\em params} & parametry wejściowe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca true jeśli była odpowiednia flaga działania i udało się wejść do odpowiedniego segmentu funkcji związanego z tą flagą. W przeciwnym razie zwraca false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a72c827aa3dcbd6cea794db636da15853}\label{funkcje_8cpp_a72c827aa3dcbd6cea794db636da15853}} 
+\index{funkcje.cpp@{funkcje.cpp}!deszyfrowanie@{deszyfrowanie}}
+\index{deszyfrowanie@{deszyfrowanie}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{deszyfrowanie()}{deszyfrowanie()}}
+{\footnotesize\ttfamily std\+::string deszyfrowanie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_params}{Params}} \&}]{params }\end{DoxyParamCaption})}
+
+Główna funkcja deszyfrująca 
+\begin{DoxyParams}{Parametry}
+{\em params} & parametry wejsciowe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca odszyfrowany tekst 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_ad27641da98891606840d52eee123af9c}\label{funkcje_8cpp_ad27641da98891606840d52eee123af9c}} 
+\index{funkcje.cpp@{funkcje.cpp}!deszyfrowanie\_znaku@{deszyfrowanie\_znaku}}
+\index{deszyfrowanie\_znaku@{deszyfrowanie\_znaku}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{deszyfrowanie\_znaku()}{deszyfrowanie\_znaku()}}
+{\footnotesize\ttfamily void deszyfrowanie\+\_\+znaku (\begin{DoxyParamCaption}\item[{std\+::string}]{klucz,  }\item[{char \&}]{znak\+\_\+tekstu,  }\item[{int \&}]{licznik\+\_\+klucza }\end{DoxyParamCaption})}
+
+Funkcja deszyfruje znak tekstu kolejnym znakiem klucza i jeśli znak dało się zdeszyfrować (tzn. a-\/z, A-\/z), to przypisuje go wartości oryginału 
+\begin{DoxyParams}{Parametry}
+{\em klucz} & klucz którym deszyfrujemy \\
+\hline
+{\em znak\+\_\+tekstu} & kolejny znak tekstu do zdeszyfrowania \\
+\hline
+{\em licznik\+\_\+klucza} & kolejny znak klucza, a gdy dojdziemy do jego końca, bierze się go od początku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_ac4bec1d296cc1bee91802d66d6e3cb28}\label{funkcje_8cpp_ac4bec1d296cc1bee91802d66d6e3cb28}} 
+\index{funkcje.cpp@{funkcje.cpp}!filtrowanie\_tekstu@{filtrowanie\_tekstu}}
+\index{filtrowanie\_tekstu@{filtrowanie\_tekstu}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{filtrowanie\_tekstu()}{filtrowanie\_tekstu()}}
+{\footnotesize\ttfamily std\+::string filtrowanie\+\_\+tekstu (\begin{DoxyParamCaption}\item[{std\+::string}]{tekst }\end{DoxyParamCaption})}
+
+Funkcja wyznacza tekst składający się z samych znaków A-\/Z. Duże litery zostawia, małe litery zamienia na duże, a resztę znaków pomija 
+\begin{DoxyParams}{Parametry}
+{\em tekst} & tekst do przefiltrowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca przefiltrowany tekst 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a0a55a03cabf2db62794f95b1a51bf8dc}\label{funkcje_8cpp_a0a55a03cabf2db62794f95b1a51bf8dc}} 
+\index{funkcje.cpp@{funkcje.cpp}!komparator\_klucza@{komparator\_klucza}}
+\index{komparator\_klucza@{komparator\_klucza}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{komparator\_klucza()}{komparator\_klucza()}}
+{\footnotesize\ttfamily bool komparator\+\_\+klucza (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ int, int $>$ \&}]{a,  }\item[{const std\+::pair$<$ int, int $>$ \&}]{b }\end{DoxyParamCaption})}
+
+Funkcja porównująca pary na podstawie klucza 
+\begin{DoxyParams}{Parametry}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca true jeśli a.\+first \texorpdfstring{$>$}{>} b.\+first, w przeciwnym razie false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a8b64db9d5403fcde687ec2bd3b2e8f09}\label{funkcje_8cpp_a8b64db9d5403fcde687ec2bd3b2e8f09}} 
+\index{funkcje.cpp@{funkcje.cpp}!komparator\_wartosci@{komparator\_wartosci}}
+\index{komparator\_wartosci@{komparator\_wartosci}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{komparator\_wartosci()}{komparator\_wartosci()}}
+{\footnotesize\ttfamily bool komparator\+\_\+wartosci (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ int, int $>$ \&}]{a,  }\item[{const std\+::pair$<$ int, int $>$ \&}]{b }\end{DoxyParamCaption})}
+
+Funkcja porównująca pary na podstawie wartości 
+\begin{DoxyParams}{Parametry}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca true jeśli a.\+second \texorpdfstring{$>$}{>} b.\+second, w przeciwnym razie false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a6b64c764eae4d4143365579a694631ba}\label{funkcje_8cpp_a6b64c764eae4d4143365579a694631ba}} 
+\index{funkcje.cpp@{funkcje.cpp}!lamanie\_kodu@{lamanie\_kodu}}
+\index{lamanie\_kodu@{lamanie\_kodu}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{lamanie\_kodu()}{lamanie\_kodu()}}
+{\footnotesize\ttfamily std\+::string lamanie\+\_\+kodu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_params}{Params}} \&}]{params }\end{DoxyParamCaption})}
+
+Główna funkcja do łamania szyfru 
+\begin{DoxyParams}{Parametry}
+{\em params} & parametry wejsciowe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca odszyfrowany tekst 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_aa1aa30db98666e5013db00600f1359bd}\label{funkcje_8cpp_aa1aa30db98666e5013db00600f1359bd}} 
+\index{funkcje.cpp@{funkcje.cpp}!NWD@{NWD}}
+\index{NWD@{NWD}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{NWD()}{NWD()}}
+{\footnotesize\ttfamily int NWD (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Funkcja wyznacza nwd rekurencyjnie dwóch liczb metodą euklidesa 
+\begin{DoxyParams}{Parametry}
+{\em a} & pierwsza liczba \\
+\hline
+{\em b} & druga liczba \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca nwd tych dwóch liczb 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a433cb84073dea919f6ca12f06949fd12}\label{funkcje_8cpp_a433cb84073dea919f6ca12f06949fd12}} 
+\index{funkcje.cpp@{funkcje.cpp}!NWDv2@{NWDv2}}
+\index{NWDv2@{NWDv2}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{NWDv2()}{NWDv2()}}
+{\footnotesize\ttfamily int NWDv2 (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{liczby }\end{DoxyParamCaption})}
+
+Funkcja wyznacza statystecznie największą liczbę, dla której ilość powstałych nwd jest największa 
+\begin{DoxyParams}{Parametry}
+{\em liczby} & wyniki operacji nwd dla wszystkich ciągów \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca jedno statystycznie najczęstsze i największe nwd 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a9950644cd912caa7988d1b3a58a65dad}\label{funkcje_8cpp_a9950644cd912caa7988d1b3a58a65dad}} 
+\index{funkcje.cpp@{funkcje.cpp}!pomoc@{pomoc}}
+\index{pomoc@{pomoc}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{pomoc()}{pomoc()}}
+{\footnotesize\ttfamily void pomoc (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{prog\+Name }\end{DoxyParamCaption})}
+
+Funkcja wyświetla okno pomocy, gdy czytaj\+\_\+\+Parametry zwróci false 
+\begin{DoxyParams}{Parametry}
+{\em prog\+Name} & nazwa programu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a6e54632e64dbb7bb3fe75b734078b779}\label{funkcje_8cpp_a6e54632e64dbb7bb3fe75b734078b779}} 
+\index{funkcje.cpp@{funkcje.cpp}!sortuj@{sortuj}}
+\index{sortuj@{sortuj}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{sortuj()}{sortuj()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ sortuj (\begin{DoxyParamCaption}\item[{std\+::map$<$ int, int $>$ \&}]{mapa }\end{DoxyParamCaption})}
+
+Funkcja zamienia mapę na wektor i sortuje go 
+\begin{DoxyParams}{Parametry}
+{\em mapa} & mapa do posortowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca posortowanego wektora, utworzonego z mapy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_aac8a4827bf3e32399476e377eaeebc85}\label{funkcje_8cpp_aac8a4827bf3e32399476e377eaeebc85}} 
+\index{funkcje.cpp@{funkcje.cpp}!szyfrowanie@{szyfrowanie}}
+\index{szyfrowanie@{szyfrowanie}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{szyfrowanie()}{szyfrowanie()}}
+{\footnotesize\ttfamily std\+::string szyfrowanie (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_params}{Params}} \&}]{params }\end{DoxyParamCaption})}
+
+Główna funkcja szyfrująca 
+\begin{DoxyParams}{Parametry}
+{\em params} & parametry wejsciowe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca zaszyfrowany tekst 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a81c1bc362cc3de97420608f0edc2e3da}\label{funkcje_8cpp_a81c1bc362cc3de97420608f0edc2e3da}} 
+\index{funkcje.cpp@{funkcje.cpp}!szyfrowanie\_znaku@{szyfrowanie\_znaku}}
+\index{szyfrowanie\_znaku@{szyfrowanie\_znaku}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{szyfrowanie\_znaku()}{szyfrowanie\_znaku()}}
+{\footnotesize\ttfamily void szyfrowanie\+\_\+znaku (\begin{DoxyParamCaption}\item[{char \&}]{znak\+\_\+tekstu,  }\item[{const std\+::string \&}]{klucz,  }\item[{int \&}]{licznik\+\_\+klucza }\end{DoxyParamCaption})}
+
+Funkcja szyfruje znak tekstu kolejnym znakiem klucza i jeśli znak dało się zaszyfrować (tzn. a-\/z, A-\/Z), to przypisuje go wartości oryginału 
+\begin{DoxyParams}{Parametry}
+{\em znak\+\_\+tekstu} & kolejny znak tekstu do zaszyfrowania \\
+\hline
+{\em klucz} & klucz którym szyfrujemy \\
+\hline
+{\em licznik\+\_\+klucza} & kolejny znak klucza, a gdy dojdziemy do jego końca, bierze się go od początku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a7c5db7b11a0b48f67932fa3c4467e6f4}\label{funkcje_8cpp_a7c5db7b11a0b48f67932fa3c4467e6f4}} 
+\index{funkcje.cpp@{funkcje.cpp}!wczytaj\_plik@{wczytaj\_plik}}
+\index{wczytaj\_plik@{wczytaj\_plik}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wczytaj\_plik()}{wczytaj\_plik()}}
+{\footnotesize\ttfamily std\+::string wczytaj\+\_\+plik (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+
+Funkcja wczytuje plik o nazwie z parametrów wejsciowych 
+\begin{DoxyParams}{Parametry}
+{\em params} & parametry wejsciowe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca tekst z tego pliku 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a03e900f988f3e271cec424db293cf72f}\label{funkcje_8cpp_a03e900f988f3e271cec424db293cf72f}} 
+\index{funkcje.cpp@{funkcje.cpp}!wyznacz\_znak\_klucza@{wyznacz\_znak\_klucza}}
+\index{wyznacz\_znak\_klucza@{wyznacz\_znak\_klucza}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wyznacz\_znak\_klucza()}{wyznacz\_znak\_klucza()}}
+{\footnotesize\ttfamily char wyznacz\+\_\+znak\+\_\+klucza (\begin{DoxyParamCaption}\item[{std\+::string \&}]{tekst,  }\item[{int}]{dlugosc\+\_\+klucza,  }\item[{int}]{poz\+\_\+klucza }\end{DoxyParamCaption})}
+
+Funkcja wyznacza literę klucza na podstawie co n-\/tej litery (n-\/długość klucza) i wyznacza najczęściej powtarzającą się. W języku polskim jest to \char`\"{}a\char`\"{}, więc na tej podstawie obliczamy przesunięcie 
+\begin{DoxyParams}{Parametry}
+{\em tekst} & tekst głowny z którego zczytujemy litery \\
+\hline
+{\em dlugosc\+\_\+klucza} & długość klucza \\
+\hline
+{\em poz\+\_\+klucza} & zmienna opisująca którego znaku klucza szukamy, co którą literę wczytujemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca literę klucza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a758866a111f50c43d17e77283c6834dd}\label{funkcje_8cpp_a758866a111f50c43d17e77283c6834dd}} 
+\index{funkcje.cpp@{funkcje.cpp}!wyznaczanie\_ciagow@{wyznaczanie\_ciagow}}
+\index{wyznaczanie\_ciagow@{wyznaczanie\_ciagow}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wyznaczanie\_ciagow()}{wyznaczanie\_ciagow()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ wyznaczanie\+\_\+ciagow (\begin{DoxyParamCaption}\item[{std\+::string \&}]{tekst }\end{DoxyParamCaption})}
+
+Funkcja wyznacza trzyliterowe ciągi 
+\begin{DoxyParams}{Parametry}
+{\em tekst} & tekst, który będziemy analizować \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca te ciągi 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a50166a2628b455ad1d998efbebe79013}\label{funkcje_8cpp_a50166a2628b455ad1d998efbebe79013}} 
+\index{funkcje.cpp@{funkcje.cpp}!wyznaczanie\_dlugosci\_klucza@{wyznaczanie\_dlugosci\_klucza}}
+\index{wyznaczanie\_dlugosci\_klucza@{wyznaczanie\_dlugosci\_klucza}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wyznaczanie\_dlugosci\_klucza()}{wyznaczanie\_dlugosci\_klucza()}}
+{\footnotesize\ttfamily int wyznaczanie\+\_\+dlugosci\+\_\+klucza (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{ciagi }\end{DoxyParamCaption})}
+
+Funkcja wyznacza długość klucza na podstawie największej ilości powtórzeń nwd dla danego ułożenia różnic odległości miedzy powtarzającymi się ciągami, oraz zmienia tą kolejność dla dokładniejszego wyniku 
+\begin{DoxyParams}{Parametry}
+{\em ciagi} & 3 literowe ciągi ułożone z kolejnych liter zaszyfrowanego tekstu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca długość klucza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_ad47349e065f01957cc4d7592ead3d0c5}\label{funkcje_8cpp_ad47349e065f01957cc4d7592ead3d0c5}} 
+\index{funkcje.cpp@{funkcje.cpp}!wyznaczanie\_klucza@{wyznaczanie\_klucza}}
+\index{wyznaczanie\_klucza@{wyznaczanie\_klucza}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wyznaczanie\_klucza()}{wyznaczanie\_klucza()}}
+{\footnotesize\ttfamily std\+::string wyznaczanie\+\_\+klucza (\begin{DoxyParamCaption}\item[{std\+::string \&}]{tekst,  }\item[{int}]{dlugosc\+\_\+klucza }\end{DoxyParamCaption})}
+
+Funkcja wyznacza klucz na podstawie jego długości. Sprawdza co n-\/tą literę (n-\/długość klucza) i wyznacza najczęściej powtarzającą się. W języku polskim jest to \char`\"{}a\char`\"{}, więc na tej podstawie obliczamy przesunięcie 
+\begin{DoxyParams}{Parametry}
+{\em tekst} & tekst głowny z którego zczytujemy litery \\
+\hline
+{\em dlugosc\+\_\+klucza} & długość klucza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca klucz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_a1d00802f84584bc981438378ff288bbd}\label{funkcje_8cpp_a1d00802f84584bc981438378ff288bbd}} 
+\index{funkcje.cpp@{funkcje.cpp}!wyznaczanie\_roznic@{wyznaczanie\_roznic}}
+\index{wyznaczanie\_roznic@{wyznaczanie\_roznic}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wyznaczanie\_roznic()}{wyznaczanie\_roznic()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ wyznaczanie\+\_\+roznic (\begin{DoxyParamCaption}\item[{std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ int $>$ $>$ \&}]{slowa }\end{DoxyParamCaption})}
+
+Funkcja wyznacza różnice między pierwszym i każdym kolejnym wystąpieniem poszczególnego 3-\/literowego ciągu 
+\begin{DoxyParams}{Parametry}
+{\em slowa} & mapa tych 3-\/literowych ciągów ($<$ciąg$>$, $<$pozycje wystąpienia$>$) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+funkcja zwraca różnice pomiędzy pierwszym i każdym kolejnym wystąpieniem poszczególnego 3-\/literowego ciągu 
+\end{DoxyReturn}

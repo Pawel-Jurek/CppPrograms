@@ -1,0 +1,226 @@
+\hypertarget{pracownicy_8h_source}{}\doxysection{pracownicy.\+h}
+\label{pracownicy_8h_source}\index{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/pracownicy.h@{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/pracownicy.h}}
+\mbox{\hyperlink{pracownicy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{funkcje_8h}{funkcje.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{zamowienia_8h}{zamowienia.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{zrealizowane__zamowienie_8h}{zrealizowane\_zamowienie.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dania_8h}{dania.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_pracownik}{Pracownik}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_obserwator}{Obserwator}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20     std::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}};       }
+\DoxyCodeLine{21     std::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}};   }
+\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}};            }
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}};   }
+\DoxyCodeLine{24     \textcolor{comment}{/* Metoda wirtualna aktualizuj */}}
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pracownik_a8f5ae183ed1689ddc8c646d944ad306d}{aktualizuj}}(\mbox{\hyperlink{class_zamowienie}{Zamowienie}}\& h) \{\}; }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_pracownik_a27ea1a6849e87fa3c9a104b6ed28efd0}{Pracownik}}(std::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, std::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}) :\mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}(\mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}),\mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}(\mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}), \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}}(false), \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}}(0) \{\}}
+\DoxyCodeLine{32     }
+\DoxyCodeLine{36     std::string \mbox{\hyperlink{class_pracownik_adb53db736d2d081cef989d741f8c58a0}{dostep\_imie}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}; \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     std::string \mbox{\hyperlink{class_pracownik_a4154fa8a229b2c81eaa4fd2c938b4671}{dostep\_nazwisko}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}; \}}
+\DoxyCodeLine{42     }
+\DoxyCodeLine{46     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pracownik_a06c50597c17d8f614b14d5a993ed3472}{dostep\_aktywny}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}}; \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pracownik_af7f7cc80e26b6a41c6b00dd2dca693b2}{wyswietl\_pracownika}}() = 0;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_pracownik}{Pracownik}}* \mbox{\hyperlink{class_pracownik_a3453456507025f7bc7946140ea9ecc0a}{znajdz\_wolnego\_pracownika}}()=0;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pracownik_a61e416f87826a390d77b5616da3591ba}{zajmij\_wolnego\_pracownika}}()=0;}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{59 \textcolor{keyword}{class }\mbox{\hyperlink{class_kucharz}{Kucharz}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_pracownik}{Pracownik}}}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61 \textcolor{keyword}{public}:}
+\DoxyCodeLine{66     \mbox{\hyperlink{class_kucharz_a19821b1d0461a690ab4861e361fc794d}{Kucharz}}(std::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, std::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}) :\mbox{\hyperlink{class_pracownik}{Pracownik}}(\mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}) \{\}}
+\DoxyCodeLine{67     }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kucharz_a5db1dc54eb789449054023c47272aee0}{aktualizuj}}(\mbox{\hyperlink{class_zamowienie}{Zamowienie}}\& zam)\textcolor{keyword}{ override }}
+\DoxyCodeLine{72 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{73         std::cout << \textcolor{stringliteral}{"{}Kucharz w akcji\(\backslash\)n"{}};}
+\DoxyCodeLine{74         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{75         \textcolor{keyword}{auto} zamowione=zam.\mbox{\hyperlink{class_zamowienie_a7bba28caf8232dec360d1c52a6dcb36b}{pobierz\_zamowione}}();}
+\DoxyCodeLine{76         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < zamowione.size(); i++)}
+\DoxyCodeLine{77         \{}
+\DoxyCodeLine{78             \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}}+=zamowione[i].pokaz\_czas();}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80         std::cout << \textcolor{stringliteral}{"{}Kucharz zajety na:"{}} << \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}} << \textcolor{stringliteral}{"{} sec\(\backslash\)n"{}};}
+\DoxyCodeLine{81         \textcolor{comment}{//Sleep(czas\_na\_ile\_zajety * 1000);}}
+\DoxyCodeLine{82         \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}} = 0;}
+\DoxyCodeLine{83         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{84         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nZamowienie dla stolika nr: "{}} << zam.\mbox{\hyperlink{class_zamowienie_a7d3cf6600a7ca5c2e887ae7ad16d6534}{dostep\_stolik}}().\mbox{\hyperlink{class_stolik_a110c0792715e03e4254cf27c729a538e}{dostep\_numer\_stolika}}() << \textcolor{stringliteral}{"{} jest gotowe\(\backslash\)n"{}};}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{88     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kucharz_a39a2c79c529c3407453cdd5ce9b958b0}{odwolaj}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{89 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{90         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kucharz_a584e1c5dfbff749cce1d8d9b32642142}{wyswietl\_pracownika}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{95 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{96         std::cout << std::setw(10) <<  \textcolor{stringliteral}{"{}Kucharz | "{}}<<std::setw(13) << \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}} << \textcolor{stringliteral}{"{} | "{}} << std::setw(16) << \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}} << \textcolor{stringliteral}{"{} | "{}} <<std::setw(8) << \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} <<\textcolor{stringliteral}{"{} | "{}} << std::setw(15)  << \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_pracownik}{Pracownik}}* \mbox{\hyperlink{class_kucharz_adf36355ea5b7ef9291e2befb4e94ed02}{znajdz\_wolnego\_pracownika}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{102 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{103         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}})}
+\DoxyCodeLine{104         \{}
+\DoxyCodeLine{105             \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{106         \}}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kucharz_af39cb6ea6f5124652e5f3c65191c755e}{zajmij\_wolnego\_pracownika}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{112 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{113         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115 \};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{118 \textcolor{keyword}{class }\mbox{\hyperlink{class_kelner}{Kelner}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_pracownik}{Pracownik}}}
+\DoxyCodeLine{119 \{}
+\DoxyCodeLine{120 \textcolor{keyword}{public}:}
+\DoxyCodeLine{125     \mbox{\hyperlink{class_kelner_a4d0074f53b541381857c190beb853c39}{Kelner}}(std::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, std::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}) :\mbox{\hyperlink{class_pracownik}{Pracownik}}(\mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}) \{\}}
+\DoxyCodeLine{126     }
+\DoxyCodeLine{130     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kelner_a3a1f3d0de13225f34fb0515bcf1df4cb}{aktualizuj}}(\mbox{\hyperlink{class_zamowienie}{Zamowienie}}\& h)\textcolor{keyword}{ override}}
+\DoxyCodeLine{131 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{132         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{133         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nKelner w akcji\(\backslash\)n"{}};}
+\DoxyCodeLine{134         Sleep(5000);}
+\DoxyCodeLine{135         std::cout << \textcolor{stringliteral}{"{}Zamowienie dostarczone do stolika nr: "{}}<<h.\mbox{\hyperlink{class_zamowienie_a7d3cf6600a7ca5c2e887ae7ad16d6534}{dostep\_stolik}}().\mbox{\hyperlink{class_stolik_a110c0792715e03e4254cf27c729a538e}{dostep\_numer\_stolika}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{136         Sleep(2000);}
+\DoxyCodeLine{137         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{138     \}}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{141     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kelner_abba7dc9f891ed12a2cc1b5b80afdda7a}{odwolaj}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{142 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{143         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{144     \}   }
+\DoxyCodeLine{145 }
+\DoxyCodeLine{147     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kelner_af04943b278ae9c7733aedb50e5966834}{wyswietl\_pracownika}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{148 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{149         std::cout << std::setw(10) << \textcolor{stringliteral}{"{}Kelner | "{}} << std::setw(13) << \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}} << \textcolor{stringliteral}{"{} | "{}} << std::setw(16) << \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}} << \textcolor{stringliteral}{"{} | "{}} << std::setw(8) << \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} << \textcolor{stringliteral}{"{} | "{}} << std::setw(15) << \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\_na\_ile\_zajety}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{150     \}}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{155     \mbox{\hyperlink{class_pracownik}{Pracownik}}* \mbox{\hyperlink{class_kelner_ad2fa01c207de356474b94ec39f1617eb}{znajdz\_wolnego\_pracownika}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{156 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{157         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}})}
+\DoxyCodeLine{158         \{}
+\DoxyCodeLine{159             \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{160         \}}
+\DoxyCodeLine{161         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{162     \}}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{165     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kelner_a303c368a2b6cd7f762248b296bcdfe7b}{zajmij\_wolnego\_pracownika}}()\textcolor{keyword}{ override}}
+\DoxyCodeLine{166 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{167         \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{168     \}}
+\DoxyCodeLine{169 \};}
+\DoxyCodeLine{171 \textcolor{keyword}{class }\mbox{\hyperlink{class_kuchnia}{Kuchnia}}}
+\DoxyCodeLine{172 \{}
+\DoxyCodeLine{173 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{174     std::vector<Pracownik*> \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}};       }
+\DoxyCodeLine{176 \textcolor{keyword}{public}:}
+\DoxyCodeLine{180     \mbox{\hyperlink{class_kuchnia_a3f6d97ebeeedd2408f942b9cf7ec3845}{Kuchnia}}(std::string nazwa\_pliku)}
+\DoxyCodeLine{181     \{}
+\DoxyCodeLine{182         std::ifstream plikwej(nazwa\_pliku);}
+\DoxyCodeLine{183         \textcolor{keywordflow}{if} (!plikwej)}
+\DoxyCodeLine{184         \{}
+\DoxyCodeLine{185             std::cerr << \textcolor{stringliteral}{"{}Error: nie mozna otworzyc pliku :( "{}} << nazwa\_pliku << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{186         \}}
+\DoxyCodeLine{187         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{188         \{}
+\DoxyCodeLine{189             std::string rola, imie, nazwisko;}
+\DoxyCodeLine{190             plikwej >> rola >> imie >> nazwisko;}
+\DoxyCodeLine{191             \textcolor{keywordflow}{if} (!plikwej.fail())}
+\DoxyCodeLine{192             \{               }
+\DoxyCodeLine{193                 }
+\DoxyCodeLine{194                 \textcolor{keywordflow}{if} (rola == \textcolor{stringliteral}{"{}kucharz"{}})}
+\DoxyCodeLine{195                 \{       }
+\DoxyCodeLine{196                     \mbox{\hyperlink{class_pracownik}{Pracownik}}* pracownik = \textcolor{keyword}{new} \mbox{\hyperlink{class_kucharz}{Kucharz}}(imie, nazwisko);}
+\DoxyCodeLine{197                     \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}.push\_back(pracownik);  }
+\DoxyCodeLine{198                 \}}
+\DoxyCodeLine{199                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (rola == \textcolor{stringliteral}{"{}kelner"{}})}
+\DoxyCodeLine{200                 \{}
+\DoxyCodeLine{201                     \mbox{\hyperlink{class_pracownik}{Pracownik}}* pracownik = \textcolor{keyword}{new} \mbox{\hyperlink{class_kelner}{Kelner}}(imie, nazwisko);}
+\DoxyCodeLine{202                     \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}.push\_back(pracownik);}
+\DoxyCodeLine{203                 \}               }
+\DoxyCodeLine{204             \}}
+\DoxyCodeLine{205             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{206                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{207         \}}
+\DoxyCodeLine{208     \};}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{211     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kuchnia_af8f23fe7a7c88ef066ad1d68370d80c2}{pokaz\_sklad\_kuchni}}()}
+\DoxyCodeLine{212     \{}
+\DoxyCodeLine{213         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nLista pracownikow:\(\backslash\)n"{}};}
+\DoxyCodeLine{214         std::cout << std::setw(10) << \textcolor{stringliteral}{"{}Rola | "{}} << std::setw(13) << \textcolor{stringliteral}{"{}Imie"{}} << \textcolor{stringliteral}{"{} | "{}} << std::setw(16) << \textcolor{stringliteral}{"{}Nazwisko"{}} << \textcolor{stringliteral}{"{} | "{}} << std::setw(8) << \textcolor{stringliteral}{"{}Aktywny  | "{}} << std::setw(15) << \textcolor{stringliteral}{"{}Na ile zajety"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{215         std::cout <<\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{216         }
+\DoxyCodeLine{217         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}.size(); i++)}
+\DoxyCodeLine{218         \{}
+\DoxyCodeLine{219             \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}[i]-\/>wyswietl\_pracownika();}
+\DoxyCodeLine{220         \}}
+\DoxyCodeLine{221         Sleep(3000);}
+\DoxyCodeLine{222     \}}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{227     \mbox{\hyperlink{class_pracownik}{Pracownik}}* \mbox{\hyperlink{class_kuchnia_a7b92121e95429c34569049cc85e391a4}{znajdz\_wolnego\_kelnera}}()}
+\DoxyCodeLine{228     \{}
+\DoxyCodeLine{229         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}.size(); i++)}
+\DoxyCodeLine{230         \{}
+\DoxyCodeLine{231             \textcolor{keyword}{auto} b = \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}[i]-\/>znajdz\_wolnego\_pracownika();}
+\DoxyCodeLine{232             \textcolor{keywordflow}{if} (b == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{233                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{234             \mbox{\hyperlink{class_kelner}{Kelner}}* ptr = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_kelner}{Kelner}}*\textcolor{keyword}{>}(b);         }
+\DoxyCodeLine{235             \textcolor{keywordflow}{if} (ptr)}
+\DoxyCodeLine{236             \{}
+\DoxyCodeLine{237                 \mbox{\hyperlink{class_kuchnia_ad8e7c1e923bccb85a47b1922fd352605}{zajmij\_pracownika}}(b);}
+\DoxyCodeLine{238                 \textcolor{keywordflow}{return} b;}
+\DoxyCodeLine{239             \}}
+\DoxyCodeLine{240         \}}
+\DoxyCodeLine{241         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nBrak wolnego kelnera!!\(\backslash\)nSprobuj ponownie za chwile\(\backslash\)n"{}};}
+\DoxyCodeLine{242         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{243     \}}
+\DoxyCodeLine{244     }
+\DoxyCodeLine{248     \mbox{\hyperlink{class_pracownik}{Pracownik}}* \mbox{\hyperlink{class_kuchnia_a959e37ed9d70b70d43553e28636195fd}{znajdz\_wolnego\_kucharza}}()}
+\DoxyCodeLine{249     \{}
+\DoxyCodeLine{250         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}.size(); i++)}
+\DoxyCodeLine{251         \{}
+\DoxyCodeLine{252             \textcolor{keyword}{auto} b = \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}[i]-\/>znajdz\_wolnego\_pracownika();}
+\DoxyCodeLine{253             \textcolor{keywordflow}{if} (b == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{254                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{255             \mbox{\hyperlink{class_kucharz}{Kucharz}}* ptr = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_kucharz}{Kucharz}}*\textcolor{keyword}{>}(b);}
+\DoxyCodeLine{256             \textcolor{keywordflow}{if} (ptr)}
+\DoxyCodeLine{257             \{}
+\DoxyCodeLine{258                 \mbox{\hyperlink{class_kuchnia_ad8e7c1e923bccb85a47b1922fd352605}{zajmij\_pracownika}}(b);}
+\DoxyCodeLine{259                 \textcolor{keywordflow}{return} b;}
+\DoxyCodeLine{260             \}}
+\DoxyCodeLine{261         \}}
+\DoxyCodeLine{262         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nBrak wolnego kucharza!!\(\backslash\)nSprobuj ponownie za chwile\(\backslash\)n"{}};}
+\DoxyCodeLine{263         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{264     \}}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{269     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kuchnia_ad8e7c1e923bccb85a47b1922fd352605}{zajmij\_pracownika}}(\mbox{\hyperlink{class_pracownik}{Pracownik}}* pracownik)}
+\DoxyCodeLine{270     \{}
+\DoxyCodeLine{271         pracownik-\/>\mbox{\hyperlink{class_pracownik_a61e416f87826a390d77b5616da3591ba}{zajmij\_wolnego\_pracownika}}();}
+\DoxyCodeLine{272     \}}
+\DoxyCodeLine{273 }
+\DoxyCodeLine{275     \mbox{\hyperlink{class_kuchnia_a0c8a95e523eb7815710842ca3b55d9a4}{\string~Kuchnia}}()}
+\DoxyCodeLine{276     \{}
+\DoxyCodeLine{277         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}.size(); i++)}
+\DoxyCodeLine{278         \{}
+\DoxyCodeLine{279             \textcolor{keyword}{delete}(\mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}[i]);}
+\DoxyCodeLine{280         \}}
+\DoxyCodeLine{281     \}}
+\DoxyCodeLine{282 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+Tojestpierwszalinia
+W tj snm smglsk 
+space: 5    tab: 1
+y: 3  e: 5  w: 2  j: 4  
+Wyzej jest znow pusta, ale tym razem z czarnymi znakami, tez bedzie pominieta, a slowo czarnymi zostanie tutaj zastapione przez czarnymi 

@@ -1,0 +1,63 @@
+\hypertarget{funkcje_8h_source}{}\doxysection{funkcje.\+h}
+\label{funkcje_8h_source}\index{C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/funkcje.h@{C:/Users/user/source/repos/polsl-\/aei-\/ppk-\/katowice/a682f497-\/gr22-\/repo/projekt/Projekt/funkcje.h}}
+\mbox{\hyperlink{funkcje_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cctype>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{12 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_params}{Params}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     std::string \mbox{\hyperlink{struct_params_af05ef4b277805f644e76f3765468a2d8}{flaga\_dzialania}}; }
+\DoxyCodeLine{15     std::string \mbox{\hyperlink{struct_params_ab4e24c5985db7eeb854a33854021a518}{inputFile}}; }
+\DoxyCodeLine{16     std::string \mbox{\hyperlink{struct_params_af8d954b4796ec2150713660d8ee0c482}{kluczFile}}; }
+\DoxyCodeLine{17     std::string \mbox{\hyperlink{struct_params_a5ad33dce4a9b0495045d0130da2180b9}{outputFile}}; }
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{26 \textcolor{keywordtype}{bool} \mbox{\hyperlink{funkcje_8h_adaf00ec439a13d3d2ca987e942c523cb}{czytaj\_Parametry}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}** argv, \mbox{\hyperlink{struct_params}{Params}}\& params);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{funkcje_8h_a9950644cd912caa7988d1b3a58a65dad}{pomoc}}(\textcolor{keyword}{const} std::string\& progName);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{38 \textcolor{keywordtype}{void} \mbox{\hyperlink{funkcje_8h_a81c1bc362cc3de97420608f0edc2e3da}{szyfrowanie\_znaku}}(\textcolor{keywordtype}{char} \&znak\_tekstu, \textcolor{keyword}{const} std::string \&klucz, \textcolor{keywordtype}{int}\& licznik\_klucza);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{funkcje_8h_ad27641da98891606840d52eee123af9c}{deszyfrowanie\_znaku}}(std::string klucz, \textcolor{keywordtype}{char}\& znak\_tekstu, \textcolor{keywordtype}{int}\& licznik\_klucza);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51 std::string \mbox{\hyperlink{funkcje_8h_aac8a4827bf3e32399476e377eaeebc85}{szyfrowanie}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_params}{Params}}\& params);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{57 std::string \mbox{\hyperlink{funkcje_8h_a7c5db7b11a0b48f67932fa3c4467e6f4}{wczytaj\_plik}}(std::string nazwa\_pliku);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{63 std::string \mbox{\hyperlink{funkcje_8h_a72c827aa3dcbd6cea794db636da15853}{deszyfrowanie}}(\mbox{\hyperlink{struct_params}{Params}} \&params);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{69 std::vector<std::string> \mbox{\hyperlink{funkcje_8h_a758866a111f50c43d17e77283c6834dd}{wyznaczanie\_ciagow}}(std::string \&tekst);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76 \textcolor{keywordtype}{int} \mbox{\hyperlink{funkcje_8h_aa1aa30db98666e5013db00600f1359bd}{NWD}}(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{int} \mbox{\hyperlink{funkcje_8h_a433cb84073dea919f6ca12f06949fd12}{NWDv2}}(std::vector<int>\& liczby);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{88 \textcolor{keywordtype}{int} \mbox{\hyperlink{funkcje_8h_a50166a2628b455ad1d998efbebe79013}{wyznaczanie\_dlugosci\_klucza}}(std::vector<std::string>\&ciagi);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{94 std::string \mbox{\hyperlink{funkcje_8h_ac4bec1d296cc1bee91802d66d6e3cb28}{filtrowanie\_tekstu}}(std::string tekst);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{100 std::string \mbox{\hyperlink{funkcje_8h_a6b64c764eae4d4143365579a694631ba}{lamanie\_kodu}}(\mbox{\hyperlink{struct_params}{Params}} \&params);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{106 \textcolor{keywordtype}{bool} \mbox{\hyperlink{funkcje_8h_a88ffc4b54f2e295ce65d3837ca674943}{decyzjator}}( \mbox{\hyperlink{struct_params}{Params}}\& params);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{112 std::vector<int>\mbox{\hyperlink{funkcje_8h_a1d00802f84584bc981438378ff288bbd}{wyznaczanie\_roznic}}(std::unordered\_map<std::string, std::vector<int>> \&slowa);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{119 std::string \mbox{\hyperlink{funkcje_8h_ad47349e065f01957cc4d7592ead3d0c5}{wyznaczanie\_klucza}}(std::string \&tekst, \textcolor{keywordtype}{int} dlugosc\_klucza);}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{127 \textcolor{keywordtype}{char} \mbox{\hyperlink{funkcje_8h_a03e900f988f3e271cec424db293cf72f}{wyznacz\_znak\_klucza}}(std::string \&tekst, \textcolor{keywordtype}{int} dlugosc\_klucza, \textcolor{keywordtype}{int} poz\_klucza);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{134 \textcolor{keywordtype}{bool} \mbox{\hyperlink{funkcje_8h_a8b64db9d5403fcde687ec2bd3b2e8f09}{komparator\_wartosci}}(\textcolor{keyword}{const} std::pair<int, int>\& a, \textcolor{keyword}{const} std::pair<int, int>\& b);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{141 \textcolor{keywordtype}{bool} \mbox{\hyperlink{funkcje_8h_a0a55a03cabf2db62794f95b1a51bf8dc}{komparator\_klucza}}(\textcolor{keyword}{const} std::pair<int, int>\& a, \textcolor{keyword}{const} std::pair<int, int>\& b);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{147 std::vector<std::pair<int, int>>\mbox{\hyperlink{funkcje_8h_a6e54632e64dbb7bb3fe75b734078b779}{sortuj}}(std::map<int, int> \&mapa);}
+
+\end{DoxyCode}

@@ -1,0 +1,93 @@
+\hypertarget{class_lista_stolikow}{}\doxysection{Lista\+Stolikow Class Reference}
+\label{class_lista_stolikow}\index{ListaStolikow@{ListaStolikow}}
+
+
+{\ttfamily \#include $<$stolik.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_stolik}{Stolik}} $>$ \mbox{\hyperlink{class_lista_stolikow_ae9a8d35aa0521a1c5d4e30e8424a3348}{dostep\+\_\+stoliki}} ()
+\item 
+\mbox{\hyperlink{class_lista_stolikow_a366310d688388128b9fac06bd0165bce}{Lista\+Stolikow}} (std\+::string nazwa\+\_\+pliku)
+\item 
+void \mbox{\hyperlink{class_lista_stolikow_a24e20ae8cbff106f1790b30873882d5f}{wyswietl\+\_\+stoliki}} ()
+\item 
+void \mbox{\hyperlink{class_lista_stolikow_ab5d86859326a77dda693b435bf71c27a}{zwolnij\+\_\+stolik}} (int poz)
+\item 
+int \mbox{\hyperlink{class_lista_stolikow_ad3c37a62ddb558ac63ff12c789401c53}{szukaj\+\_\+stolika}} (int ilosc\+\_\+chetnych)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_stolik}{Stolik}} $>$ \mbox{\hyperlink{class_lista_stolikow_ac2efa4e324dfae78d9e59594143f4075}{stoliki}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_lista_stolikow}{Lista\+Stolikow}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lista_stolikow_a366310d688388128b9fac06bd0165bce}\label{class_lista_stolikow_a366310d688388128b9fac06bd0165bce}} 
+\index{ListaStolikow@{ListaStolikow}!ListaStolikow@{ListaStolikow}}
+\index{ListaStolikow@{ListaStolikow}!ListaStolikow@{ListaStolikow}}
+\doxysubsubsection{\texorpdfstring{ListaStolikow()}{ListaStolikow()}}
+{\footnotesize\ttfamily Lista\+Stolikow\+::\+Lista\+Stolikow (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor dla klasy \mbox{\hyperlink{class_lista_stolikow}{Lista\+Stolikow}}, inicjuje zmienna Stolikami zawartymi w pliku 
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+\_\+pliku} & nazwa pliku ze stolikami \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lista_stolikow_ae9a8d35aa0521a1c5d4e30e8424a3348}\label{class_lista_stolikow_ae9a8d35aa0521a1c5d4e30e8424a3348}} 
+\index{ListaStolikow@{ListaStolikow}!dostep\_stoliki@{dostep\_stoliki}}
+\index{dostep\_stoliki@{dostep\_stoliki}!ListaStolikow@{ListaStolikow}}
+\doxysubsubsection{\texorpdfstring{dostep\_stoliki()}{dostep\_stoliki()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_stolik}{Stolik}} $>$ Lista\+Stolikow\+::dostep\+\_\+stoliki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwraca stoliki \begin{DoxyReturn}{Returns}
+stoliki zwraca stoliki 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lista_stolikow_ad3c37a62ddb558ac63ff12c789401c53}\label{class_lista_stolikow_ad3c37a62ddb558ac63ff12c789401c53}} 
+\index{ListaStolikow@{ListaStolikow}!szukaj\_stolika@{szukaj\_stolika}}
+\index{szukaj\_stolika@{szukaj\_stolika}!ListaStolikow@{ListaStolikow}}
+\doxysubsubsection{\texorpdfstring{szukaj\_stolika()}{szukaj\_stolika()}}
+{\footnotesize\ttfamily int Lista\+Stolikow\+::szukaj\+\_\+stolika (\begin{DoxyParamCaption}\item[{int}]{ilosc\+\_\+chetnych }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja szuka stolik i zwraca zajeta pozycje 
+\begin{DoxyParams}{Parameters}
+{\em ilosc\+\_\+chetnych} & ilosc osob dla ktorej przyporzadkowac stolik \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pozycja znalezionego stolika 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lista_stolikow_a24e20ae8cbff106f1790b30873882d5f}\label{class_lista_stolikow_a24e20ae8cbff106f1790b30873882d5f}} 
+\index{ListaStolikow@{ListaStolikow}!wyswietl\_stoliki@{wyswietl\_stoliki}}
+\index{wyswietl\_stoliki@{wyswietl\_stoliki}!ListaStolikow@{ListaStolikow}}
+\doxysubsubsection{\texorpdfstring{wyswietl\_stoliki()}{wyswietl\_stoliki()}}
+{\footnotesize\ttfamily void Lista\+Stolikow\+::wyswietl\+\_\+stoliki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja wyswietla stoliki \mbox{\Hypertarget{class_lista_stolikow_ab5d86859326a77dda693b435bf71c27a}\label{class_lista_stolikow_ab5d86859326a77dda693b435bf71c27a}} 
+\index{ListaStolikow@{ListaStolikow}!zwolnij\_stolik@{zwolnij\_stolik}}
+\index{zwolnij\_stolik@{zwolnij\_stolik}!ListaStolikow@{ListaStolikow}}
+\doxysubsubsection{\texorpdfstring{zwolnij\_stolik()}{zwolnij\_stolik()}}
+{\footnotesize\ttfamily void Lista\+Stolikow\+::zwolnij\+\_\+stolik (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwalnia stolik 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lista_stolikow_ac2efa4e324dfae78d9e59594143f4075}\label{class_lista_stolikow_ac2efa4e324dfae78d9e59594143f4075}} 
+\index{ListaStolikow@{ListaStolikow}!stoliki@{stoliki}}
+\index{stoliki@{stoliki}!ListaStolikow@{ListaStolikow}}
+\doxysubsubsection{\texorpdfstring{stoliki}{stoliki}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_stolik}{Stolik}}$>$ Lista\+Stolikow\+::stoliki\hspace{0.3cm}{\ttfamily [protected]}}
+
+tablica wektorowa Stolikow 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{stolik_8h}{stolik.\+h}}\end{DoxyCompactItemize}

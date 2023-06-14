@@ -1,0 +1,72 @@
+\hypertarget{dania_8h_source}{}\doxysection{dania.\+h}
+\label{dania_8h_source}\index{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/dania.h@{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/dania.h}}
+\mbox{\hyperlink{dania_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{funkcje_8h}{funkcje.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <conio.h>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_danie}{Danie}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{18     std::string \mbox{\hyperlink{class_danie_a1fc30c8ed6842084874e3b46bc98d029}{nazwa}};         }
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_danie_a27f897cb2f72be18eb66098c6d96696f}{czas\_przygotwania}};     }
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_danie_ac40d65460c9e36488054d54114aed4f4}{wielkosc\_porcji}};     }
+\DoxyCodeLine{21     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}{cena}};                }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_danie_aa296be05230a5057e3ff96f39f078d69}{Danie}}(std::string \mbox{\hyperlink{class_danie_a1fc30c8ed6842084874e3b46bc98d029}{nazwa}}, \textcolor{keywordtype}{int} czas\_przygotowania, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_danie_ac40d65460c9e36488054d54114aed4f4}{wielkosc\_porcji}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}{cena}}) : \mbox{\hyperlink{class_danie_a1fc30c8ed6842084874e3b46bc98d029}{nazwa}}(\mbox{\hyperlink{class_danie_a1fc30c8ed6842084874e3b46bc98d029}{nazwa}}), \mbox{\hyperlink{class_danie_a27f897cb2f72be18eb66098c6d96696f}{czas\_przygotwania}}(czas\_przygotowania), \mbox{\hyperlink{class_danie_ac40d65460c9e36488054d54114aed4f4}{wielkosc\_porcji}}(\mbox{\hyperlink{class_danie_ac40d65460c9e36488054d54114aed4f4}{wielkosc\_porcji}}), \mbox{\hyperlink{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}{cena}}(\mbox{\hyperlink{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}{cena}}) \{\}}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_danie_a66388cd75ea365e9759f865923a0244c}{pokaz\_czas}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_danie_a27f897cb2f72be18eb66098c6d96696f}{czas\_przygotwania}}; \}}
+\DoxyCodeLine{36     }
+\DoxyCodeLine{38     \textcolor{keyword}{auto} \mbox{\hyperlink{class_danie_aacc67fc6a493b829a7d0d78fb52a32db}{operator<=>}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_danie}{Danie}}\& rhs) \textcolor{keyword}{const} = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_danie_a8f724bdea5ab3df596c01030c359f20b}{operator<< }}(std::ostream\& s, \textcolor{keyword}{const} \mbox{\hyperlink{class_danie}{Danie}}\& danie); }
+\DoxyCodeLine{41     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_zamowienie}{Zamowienie}};                                             }
+\DoxyCodeLine{42     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_zrealizowane__zamowienie}{Zrealizowane\_zamowienie}};                                   }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{47 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}}}
+\DoxyCodeLine{48 \{}
+\DoxyCodeLine{49 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{50     std::vector<Danie> \mbox{\hyperlink{class_menu_a63b445182a938311c038eb29239fcb0b}{lista\_dan}};  }
+\DoxyCodeLine{52 \textcolor{keyword}{public}:}
+\DoxyCodeLine{56     \mbox{\hyperlink{class_menu_ac35d0283d2ffce05ec7d26f93bbcb857}{Menu}}(std::string nazwa\_pliku) }
+\DoxyCodeLine{57     \{}
+\DoxyCodeLine{58         std::string linia;}
+\DoxyCodeLine{59         std::ifstream plikwej(nazwa\_pliku);}
+\DoxyCodeLine{60         \textcolor{keywordflow}{if} (!plikwej)}
+\DoxyCodeLine{61         \{}
+\DoxyCodeLine{62             std::cerr << \textcolor{stringliteral}{"{}Error: nie mozna otworzyc pliku :( "{}} << nazwa\_pliku << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \textcolor{keywordflow}{while} (getline(plikwej, linia))}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66             std::istringstream dane(linia);}
+\DoxyCodeLine{67             std::string nazwa1, cena1, czas1, porcja1;}
+\DoxyCodeLine{68             dane >> nazwa1 >> czas1 >> porcja1 >> cena1;}
+\DoxyCodeLine{69             \mbox{\hyperlink{class_danie}{Danie}} danie(nazwa1, konwerter\_ze\_stringa<int>(czas1), konwerter\_ze\_stringa<int>(porcja1), konwerter\_ze\_stringa<double>(cena1));}
+\DoxyCodeLine{70             \mbox{\hyperlink{class_menu_a63b445182a938311c038eb29239fcb0b}{lista\_dan}}.push\_back(danie);}
+\DoxyCodeLine{71         \}}
+\DoxyCodeLine{72     \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_menu_a27536e490d64a8aaf421e52da99e2c0a}{wyswietl\_menu}}() }
+\DoxyCodeLine{76     \{}
+\DoxyCodeLine{77         system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{78         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_menu_a63b445182a938311c038eb29239fcb0b}{lista\_dan}}.size(); i++)}
+\DoxyCodeLine{79         \{}
+\DoxyCodeLine{80             std::cout << i + 1 << \textcolor{stringliteral}{"{}. "{}}; }
+\DoxyCodeLine{81             std::cout << \mbox{\hyperlink{class_menu_a63b445182a938311c038eb29239fcb0b}{lista\_dan}}[i];}
+\DoxyCodeLine{82         \}}
+\DoxyCodeLine{83         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n 0 -\/ zatwierdz operacje"{}};}
+\DoxyCodeLine{84     \};}
+\DoxyCodeLine{85     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_zamowienie}{Zamowienie}}; }
+\DoxyCodeLine{86 \};}
+
+\end{DoxyCode}

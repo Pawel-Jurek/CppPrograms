@@ -1,0 +1,3 @@
+--br -i zaszyfrowany.txt -o zlamany.txt
+--en -i jawny.txt -o zaszyfrowany.txt -k klucz.txt
+--de -i zaszyfrowany.txt -o odszyfrowany.txt -k klucz.txt

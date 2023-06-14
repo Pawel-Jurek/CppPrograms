@@ -1,0 +1,175 @@
+\hypertarget{class_pracownik}{}\doxysection{Pracownik Class Reference}
+\label{class_pracownik}\index{Pracownik@{Pracownik}}
+
+
+{\ttfamily \#include $<$pracownicy.\+h$>$}
+
+Inheritance diagram for Pracownik\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pracownik}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pracownik_a27ea1a6849e87fa3c9a104b6ed28efd0}{Pracownik}} (std\+::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, std\+::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}})
+\item 
+std\+::string \mbox{\hyperlink{class_pracownik_adb53db736d2d081cef989d741f8c58a0}{dostep\+\_\+imie}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_pracownik_a4154fa8a229b2c81eaa4fd2c938b4671}{dostep\+\_\+nazwisko}} ()
+\item 
+bool \mbox{\hyperlink{class_pracownik_a06c50597c17d8f614b14d5a993ed3472}{dostep\+\_\+aktywny}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pracownik_af7f7cc80e26b6a41c6b00dd2dca693b2}{wyswietl\+\_\+pracownika}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ \mbox{\hyperlink{class_pracownik_a3453456507025f7bc7946140ea9ecc0a}{znajdz\+\_\+wolnego\+\_\+pracownika}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_pracownik_a61e416f87826a390d77b5616da3591ba}{zajmij\+\_\+wolnego\+\_\+pracownika}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_pracownik_a8f5ae183ed1689ddc8c646d944ad306d}{aktualizuj}} (\mbox{\hyperlink{class_zamowienie}{Zamowienie}} \&h)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}
+\item 
+std\+::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}}
+\item 
+bool \mbox{\hyperlink{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}{aktywny}}
+\item 
+int \mbox{\hyperlink{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}{czas\+\_\+na\+\_\+ile\+\_\+zajety}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_pracownik}{Pracownik}} dziedziczaca publicznie po klasie \mbox{\hyperlink{class_obserwator}{Obserwator}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pracownik_a27ea1a6849e87fa3c9a104b6ed28efd0}\label{class_pracownik_a27ea1a6849e87fa3c9a104b6ed28efd0}} 
+\index{Pracownik@{Pracownik}!Pracownik@{Pracownik}}
+\index{Pracownik@{Pracownik}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{Pracownik()}{Pracownik()}}
+{\footnotesize\ttfamily Pracownik\+::\+Pracownik (\begin{DoxyParamCaption}\item[{std\+::string}]{imie,  }\item[{std\+::string}]{nazwisko }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{class_pracownik}{Pracownik}} inicjujacy zmienne wartosciami podanymi w konstruktorze, ponadto ustawiajacy status aktywny na false i czas\+\_\+na\+\_\+ile\+\_\+zajety na 0 
+\begin{DoxyParams}{Parameters}
+{\em imie} & imie pracownika \\
+\hline
+{\em nazwisko} & nazwisko pracownika \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pracownik_a8f5ae183ed1689ddc8c646d944ad306d}\label{class_pracownik_a8f5ae183ed1689ddc8c646d944ad306d}} 
+\index{Pracownik@{Pracownik}!aktualizuj@{aktualizuj}}
+\index{aktualizuj@{aktualizuj}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{aktualizuj()}{aktualizuj()}}
+{\footnotesize\ttfamily virtual void Pracownik\+::aktualizuj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_zamowienie}{Zamowienie}} \&}]{zamowienie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Metoda czysto wirtualna aktualizujaca obserwatorow 
+\begin{DoxyParams}{Parameters}
+{\em zamowienie} & zamowienie przeslane do oberwatorow \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_obserwator_a4bc7f3e7702cfa0ed10bc7a2aa9123aa}{Obserwator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_kelner_a3a1f3d0de13225f34fb0515bcf1df4cb}{Kelner}}, and \mbox{\hyperlink{class_kucharz_a5db1dc54eb789449054023c47272aee0}{Kucharz}}.
+
+\mbox{\Hypertarget{class_pracownik_a06c50597c17d8f614b14d5a993ed3472}\label{class_pracownik_a06c50597c17d8f614b14d5a993ed3472}} 
+\index{Pracownik@{Pracownik}!dostep\_aktywny@{dostep\_aktywny}}
+\index{dostep\_aktywny@{dostep\_aktywny}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{dostep\_aktywny()}{dostep\_aktywny()}}
+{\footnotesize\ttfamily bool Pracownik\+::dostep\+\_\+aktywny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda zwracajaca czy pracownik jest aktywny \begin{DoxyReturn}{Returns}
+aktywny (true / false) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pracownik_adb53db736d2d081cef989d741f8c58a0}\label{class_pracownik_adb53db736d2d081cef989d741f8c58a0}} 
+\index{Pracownik@{Pracownik}!dostep\_imie@{dostep\_imie}}
+\index{dostep\_imie@{dostep\_imie}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{dostep\_imie()}{dostep\_imie()}}
+{\footnotesize\ttfamily std\+::string Pracownik\+::dostep\+\_\+imie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda zwracajaca imie pracownika \begin{DoxyReturn}{Returns}
+imie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pracownik_a4154fa8a229b2c81eaa4fd2c938b4671}\label{class_pracownik_a4154fa8a229b2c81eaa4fd2c938b4671}} 
+\index{Pracownik@{Pracownik}!dostep\_nazwisko@{dostep\_nazwisko}}
+\index{dostep\_nazwisko@{dostep\_nazwisko}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{dostep\_nazwisko()}{dostep\_nazwisko()}}
+{\footnotesize\ttfamily std\+::string Pracownik\+::dostep\+\_\+nazwisko (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda zwracajaca nazwisko pracownika \begin{DoxyReturn}{Returns}
+nazwisko 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pracownik_af7f7cc80e26b6a41c6b00dd2dca693b2}\label{class_pracownik_af7f7cc80e26b6a41c6b00dd2dca693b2}} 
+\index{Pracownik@{Pracownik}!wyswietl\_pracownika@{wyswietl\_pracownika}}
+\index{wyswietl\_pracownika@{wyswietl\_pracownika}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{wyswietl\_pracownika()}{wyswietl\_pracownika()}}
+{\footnotesize\ttfamily virtual void Pracownik\+::wyswietl\+\_\+pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Metoda wirtualna wyswietlajaca pracownika 
+
+Implemented in \mbox{\hyperlink{class_kucharz_a584e1c5dfbff749cce1d8d9b32642142}{Kucharz}}, and \mbox{\hyperlink{class_kelner_af04943b278ae9c7733aedb50e5966834}{Kelner}}.
+
+\mbox{\Hypertarget{class_pracownik_a61e416f87826a390d77b5616da3591ba}\label{class_pracownik_a61e416f87826a390d77b5616da3591ba}} 
+\index{Pracownik@{Pracownik}!zajmij\_wolnego\_pracownika@{zajmij\_wolnego\_pracownika}}
+\index{zajmij\_wolnego\_pracownika@{zajmij\_wolnego\_pracownika}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{zajmij\_wolnego\_pracownika()}{zajmij\_wolnego\_pracownika()}}
+{\footnotesize\ttfamily virtual void Pracownik\+::zajmij\+\_\+wolnego\+\_\+pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Metoda wirtualna zajmujaca wolnego pracownika 
+
+Implemented in \mbox{\hyperlink{class_kucharz_af39cb6ea6f5124652e5f3c65191c755e}{Kucharz}}, and \mbox{\hyperlink{class_kelner_a303c368a2b6cd7f762248b296bcdfe7b}{Kelner}}.
+
+\mbox{\Hypertarget{class_pracownik_a3453456507025f7bc7946140ea9ecc0a}\label{class_pracownik_a3453456507025f7bc7946140ea9ecc0a}} 
+\index{Pracownik@{Pracownik}!znajdz\_wolnego\_pracownika@{znajdz\_wolnego\_pracownika}}
+\index{znajdz\_wolnego\_pracownika@{znajdz\_wolnego\_pracownika}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{znajdz\_wolnego\_pracownika()}{znajdz\_wolnego\_pracownika()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ Pracownik\+::znajdz\+\_\+wolnego\+\_\+pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Metoda wirtualna szukajaca wolnego pracownika 
+
+Implemented in \mbox{\hyperlink{class_kucharz_adf36355ea5b7ef9291e2befb4e94ed02}{Kucharz}}, and \mbox{\hyperlink{class_kelner_ad2fa01c207de356474b94ec39f1617eb}{Kelner}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}\label{class_pracownik_ae90a483d7777aaf23e01f6d3865fb532}} 
+\index{Pracownik@{Pracownik}!aktywny@{aktywny}}
+\index{aktywny@{aktywny}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{aktywny}{aktywny}}
+{\footnotesize\ttfamily bool Pracownik\+::aktywny\hspace{0.3cm}{\ttfamily [protected]}}
+
+czy aktywny \mbox{\Hypertarget{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}\label{class_pracownik_a99acf92a15ef05ff67e0e95519b4dc09}} 
+\index{Pracownik@{Pracownik}!czas\_na\_ile\_zajety@{czas\_na\_ile\_zajety}}
+\index{czas\_na\_ile\_zajety@{czas\_na\_ile\_zajety}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{czas\_na\_ile\_zajety}{czas\_na\_ile\_zajety}}
+{\footnotesize\ttfamily int Pracownik\+::czas\+\_\+na\+\_\+ile\+\_\+zajety\hspace{0.3cm}{\ttfamily [protected]}}
+
+czas na ile zajety \mbox{\Hypertarget{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}\label{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}} 
+\index{Pracownik@{Pracownik}!imie@{imie}}
+\index{imie@{imie}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{imie}{imie}}
+{\footnotesize\ttfamily std\+::string Pracownik\+::imie\hspace{0.3cm}{\ttfamily [protected]}}
+
+imie pracownika \mbox{\Hypertarget{class_pracownik_a1109bce406462231846a743cd0aa7e0f}\label{class_pracownik_a1109bce406462231846a743cd0aa7e0f}} 
+\index{Pracownik@{Pracownik}!nazwisko@{nazwisko}}
+\index{nazwisko@{nazwisko}!Pracownik@{Pracownik}}
+\doxysubsubsection{\texorpdfstring{nazwisko}{nazwisko}}
+{\footnotesize\ttfamily std\+::string Pracownik\+::nazwisko\hspace{0.3cm}{\ttfamily [protected]}}
+
+nazwisko pracownika 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{pracownicy_8h}{pracownicy.\+h}}\end{DoxyCompactItemize}

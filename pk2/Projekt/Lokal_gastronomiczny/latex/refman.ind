@@ -1,0 +1,325 @@
+\begin{theindex}
+
+  \item {$\sim$Kuchnia}
+    \subitem {Kuchnia}, \hyperpage{16}
+  \item {$\sim$Obserwator}
+    \subitem {Obserwator}, \hyperpage{22}
+
+  \indexspace
+
+  \item {aktualizuj}
+    \subitem {Kelner}, \hyperpage{12}
+    \subitem {Kucharz}, \hyperpage{14}
+    \subitem {Obserwator}, \hyperpage{22}
+    \subitem {Pracownik}, \hyperpage{24}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{35}
+  \item {aktualni\_uzytkownicy}
+    \subitem {Stolik}, \hyperpage{29}
+  \item {aktywny}
+    \subitem {Pracownik}, \hyperpage{26}
+  \item {anuluj}
+    \subitem {Zamowienie}, \hyperpage{31}
+
+  \indexspace
+
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/dania.h}, 
+		\hyperpage{37}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/funkcje.cpp}, 
+		\hyperpage{38}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/funkcje.h}, 
+		\hyperpage{39}, \hyperpage{41}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/main.cpp}, 
+		\hyperpage{41}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/pracownicy.h}, 
+		\hyperpage{42}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/stolik.h}, 
+		\hyperpage{45}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/zamowienia.h}, 
+		\hyperpage{47}
+  \item {C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/zrealizowane\_zamowienie.h}, 
+		\hyperpage{50}
+  \item {cena}
+    \subitem {Danie}, \hyperpage{10}
+  \item {ctr}
+    \subitem {Zamowienie}, \hyperpage{33}
+  \item {czas\_na\_ile\_zajety}
+    \subitem {Pracownik}, \hyperpage{26}
+  \item {czas\_przygotwania}
+    \subitem {Danie}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Danie}, \hyperpage{7}
+    \subitem {cena}, \hyperpage{10}
+    \subitem {czas\_przygotwania}, \hyperpage{10}
+    \subitem {Danie}, \hyperpage{7}
+    \subitem {nazwa}, \hyperpage{10}
+    \subitem {operator$<$$<$}, \hyperpage{9}
+    \subitem {operator$<$=$>$}, \hyperpage{9}
+    \subitem {pokaz\_czas}, \hyperpage{9}
+    \subitem {wielkosc\_porcji}, \hyperpage{10}
+    \subitem {Zamowienie}, \hyperpage{9}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{9}
+  \item {dodaj\_danie\_do\_zamowienia}
+    \subitem {Zamowienie}, \hyperpage{31}
+  \item {dopisz}
+    \subitem {Zamowienie}, \hyperpage{31}
+  \item {dostep\_aktywny}
+    \subitem {Pracownik}, \hyperpage{24}
+  \item {dostep\_do\_maxa}
+    \subitem {Stolik}, \hyperpage{27}
+  \item {dostep\_imie}
+    \subitem {Pracownik}, \hyperpage{25}
+  \item {dostep\_nazwisko}
+    \subitem {Pracownik}, \hyperpage{25}
+  \item {dostep\_numer\_stolika}
+    \subitem {Stolik}, \hyperpage{28}
+  \item {dostep\_stolik}
+    \subitem {Zamowienie}, \hyperpage{31}
+  \item {dostep\_stoliki}
+    \subitem {ListaStolikow}, \hyperpage{18}
+
+  \indexspace
+
+  \item {funkcje.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{38}
+    \subitem {pokaz\_menu\_dzialania\_wstep}, \hyperpage{39}
+    \subitem {pokaz\_menu\_dzialania\_zamowienie}, \hyperpage{39}
+    \subitem {wyznacz\_id\_wolny\_stolik\_min\_os}, \hyperpage{39}
+  \item {funkcje.h}
+    \subitem {konwerter\_ze\_stringa}, \hyperpage{40}
+    \subitem {pokaz\_menu\_dzialania\_wstep}, \hyperpage{40}
+    \subitem {pokaz\_menu\_dzialania\_zamowienie}, \hyperpage{40}
+    \subitem {wyznacz\_id\_wolny\_stolik\_min\_os}, \hyperpage{40}
+
+  \indexspace
+
+  \item {ilosc}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{36}
+  \item {imie}
+    \subitem {Pracownik}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Kelner}, \hyperpage{11}
+    \subitem {aktualizuj}, \hyperpage{12}
+    \subitem {Kelner}, \hyperpage{11}
+    \subitem {odwolaj}, \hyperpage{12}
+    \subitem {wyswietl\_pracownika}, \hyperpage{12}
+    \subitem {zajmij\_wolnego\_pracownika}, \hyperpage{12}
+    \subitem {znajdz\_wolnego\_pracownika}, \hyperpage{12}
+  \item {konwerter\_ze\_stringa}
+    \subitem {funkcje.h}, \hyperpage{40}
+  \item {Kucharz}, \hyperpage{13}
+    \subitem {aktualizuj}, \hyperpage{14}
+    \subitem {Kucharz}, \hyperpage{14}
+    \subitem {odwolaj}, \hyperpage{14}
+    \subitem {wyswietl\_pracownika}, \hyperpage{14}
+    \subitem {zajmij\_wolnego\_pracownika}, \hyperpage{15}
+    \subitem {znajdz\_wolnego\_pracownika}, \hyperpage{15}
+  \item {Kuchnia}, \hyperpage{15}
+    \subitem {$\sim$Kuchnia}, \hyperpage{16}
+    \subitem {Kuchnia}, \hyperpage{16}
+    \subitem {pokaz\_sklad\_kuchni}, \hyperpage{16}
+    \subitem {pracownicy}, \hyperpage{17}
+    \subitem {zajmij\_pracownika}, \hyperpage{16}
+    \subitem {znajdz\_wolnego\_kelnera}, \hyperpage{17}
+    \subitem {znajdz\_wolnego\_kucharza}, \hyperpage{17}
+
+  \indexspace
+
+  \item {lista\_dan}
+    \subitem {Menu}, \hyperpage{21}
+  \item {ListaStolikow}, \hyperpage{17}
+    \subitem {dostep\_stoliki}, \hyperpage{18}
+    \subitem {ListaStolikow}, \hyperpage{18}
+    \subitem {Stolik}, \hyperpage{28}
+    \subitem {stoliki}, \hyperpage{19}
+    \subitem {szukaj\_stolika}, \hyperpage{18}
+    \subitem {wyswietl\_stoliki}, \hyperpage{19}
+    \subitem {zwolnij\_stolik}, \hyperpage{19}
+
+  \indexspace
+
+  \item {max\_ilosc\_osob}
+    \subitem {Stolik}, \hyperpage{29}
+  \item {Menu}, \hyperpage{20}
+    \subitem {lista\_dan}, \hyperpage{21}
+    \subitem {Menu}, \hyperpage{20}
+    \subitem {wyswietl\_menu}, \hyperpage{20}
+    \subitem {Zamowienie}, \hyperpage{21}
+  \item {menu}
+    \subitem {Zamowienie}, \hyperpage{33}
+
+  \indexspace
+
+  \item {nazwa}
+    \subitem {Danie}, \hyperpage{10}
+  \item {nazwisko}
+    \subitem {Pracownik}, \hyperpage{26}
+  \item {numer}
+    \subitem {Stolik}, \hyperpage{29}
+
+  \indexspace
+
+  \item {oblicz\_czas\_przygotowania}
+    \subitem {Zamowienie}, \hyperpage{31}
+  \item {oblicz\_koszt}
+    \subitem {Zamowienie}, \hyperpage{32}
+  \item {Obserwator}, \hyperpage{21}
+    \subitem {$\sim$Obserwator}, \hyperpage{22}
+    \subitem {aktualizuj}, \hyperpage{22}
+    \subitem {odwolaj}, \hyperpage{22}
+  \item {obserwatorzy}
+    \subitem {Zamowienie}, \hyperpage{33}
+  \item {odwolaj}
+    \subitem {Kelner}, \hyperpage{12}
+    \subitem {Kucharz}, \hyperpage{14}
+    \subitem {Obserwator}, \hyperpage{22}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{36}
+  \item {operator$<$$<$}
+    \subitem {Danie}, \hyperpage{9}
+    \subitem {funkcje.cpp}, \hyperpage{38}
+  \item {operator$<$=$>$}
+    \subitem {Danie}, \hyperpage{9}
+
+  \indexspace
+
+  \item {pobierz\_zamowione}
+    \subitem {Zamowienie}, \hyperpage{32}
+  \item {pokaz\_czas}
+    \subitem {Danie}, \hyperpage{9}
+  \item {pokaz\_menu\_dzialania\_wstep}
+    \subitem {funkcje.cpp}, \hyperpage{39}
+    \subitem {funkcje.h}, \hyperpage{40}
+  \item {pokaz\_menu\_dzialania\_zamowienie}
+    \subitem {funkcje.cpp}, \hyperpage{39}
+    \subitem {funkcje.h}, \hyperpage{40}
+  \item {pokaz\_sklad\_kuchni}
+    \subitem {Kuchnia}, \hyperpage{16}
+  \item {pokaz\_statystyki}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{36}
+  \item {pokaz\_stolik}
+    \subitem {Stolik}, \hyperpage{28}
+  \item {pokaz\_zamowione\_rzeczy}
+    \subitem {Zamowienie}, \hyperpage{32}
+  \item {powiadom}
+    \subitem {Zamowienie}, \hyperpage{32}
+  \item {pracownicy}
+    \subitem {Kuchnia}, \hyperpage{17}
+  \item {Pracownik}, \hyperpage{23}
+    \subitem {aktualizuj}, \hyperpage{24}
+    \subitem {aktywny}, \hyperpage{26}
+    \subitem {czas\_na\_ile\_zajety}, \hyperpage{26}
+    \subitem {dostep\_aktywny}, \hyperpage{24}
+    \subitem {dostep\_imie}, \hyperpage{25}
+    \subitem {dostep\_nazwisko}, \hyperpage{25}
+    \subitem {imie}, \hyperpage{26}
+    \subitem {nazwisko}, \hyperpage{26}
+    \subitem {Pracownik}, \hyperpage{24}
+    \subitem {wyswietl\_pracownika}, \hyperpage{25}
+    \subitem {zajmij\_wolnego\_pracownika}, \hyperpage{25}
+    \subitem {znajdz\_wolnego\_pracownika}, \hyperpage{25}
+  \item {prezentuj\_aktualne\_zakupy}
+    \subitem {Zamowienie}, \hyperpage{32}
+
+  \indexspace
+
+  \item {Stolik}, \hyperpage{26}
+    \subitem {aktualni\_uzytkownicy}, \hyperpage{29}
+    \subitem {dostep\_do\_maxa}, \hyperpage{27}
+    \subitem {dostep\_numer\_stolika}, \hyperpage{28}
+    \subitem {ListaStolikow}, \hyperpage{28}
+    \subitem {max\_ilosc\_osob}, \hyperpage{29}
+    \subitem {numer}, \hyperpage{29}
+    \subitem {pokaz\_stolik}, \hyperpage{28}
+    \subitem {Stolik}, \hyperpage{27}
+    \subitem {wolny}, \hyperpage{29}
+    \subitem {wyznacz\_id\_wolny\_stolik\_min\_os}, \hyperpage{28}
+    \subitem {zajmij}, \hyperpage{28}
+  \item {stolik}
+    \subitem {Zamowienie}, \hyperpage{33}
+  \item {stoliki}
+    \subitem {ListaStolikow}, \hyperpage{19}
+  \item {szukaj\_stolika}
+    \subitem {ListaStolikow}, \hyperpage{18}
+
+  \indexspace
+
+  \item {wielkosc\_porcji}
+    \subitem {Danie}, \hyperpage{10}
+  \item {wolny}
+    \subitem {Stolik}, \hyperpage{29}
+  \item {wypisz}
+    \subitem {Zamowienie}, \hyperpage{32}
+  \item {wyswietl\_menu}
+    \subitem {Menu}, \hyperpage{20}
+  \item {wyswietl\_pracownika}
+    \subitem {Kelner}, \hyperpage{12}
+    \subitem {Kucharz}, \hyperpage{14}
+    \subitem {Pracownik}, \hyperpage{25}
+  \item {wyswietl\_stoliki}
+    \subitem {ListaStolikow}, \hyperpage{19}
+  \item {wyznacz\_id\_wolny\_stolik\_min\_os}
+    \subitem {funkcje.cpp}, \hyperpage{39}
+    \subitem {funkcje.h}, \hyperpage{40}
+    \subitem {Stolik}, \hyperpage{28}
+
+  \indexspace
+
+  \item {zajmij}
+    \subitem {Stolik}, \hyperpage{28}
+  \item {zajmij\_pracownika}
+    \subitem {Kuchnia}, \hyperpage{16}
+  \item {zajmij\_wolnego\_pracownika}
+    \subitem {Kelner}, \hyperpage{12}
+    \subitem {Kucharz}, \hyperpage{15}
+    \subitem {Pracownik}, \hyperpage{25}
+  \item {zamowienia}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{36}
+  \item {Zamowienie}, \hyperpage{29}
+    \subitem {anuluj}, \hyperpage{31}
+    \subitem {ctr}, \hyperpage{33}
+    \subitem {Danie}, \hyperpage{9}
+    \subitem {dodaj\_danie\_do\_zamowienia}, \hyperpage{31}
+    \subitem {dopisz}, \hyperpage{31}
+    \subitem {dostep\_stolik}, \hyperpage{31}
+    \subitem {Menu}, \hyperpage{21}
+    \subitem {menu}, \hyperpage{33}
+    \subitem {oblicz\_czas\_przygotowania}, \hyperpage{31}
+    \subitem {oblicz\_koszt}, \hyperpage{32}
+    \subitem {obserwatorzy}, \hyperpage{33}
+    \subitem {pobierz\_zamowione}, \hyperpage{32}
+    \subitem {pokaz\_zamowione\_rzeczy}, \hyperpage{32}
+    \subitem {powiadom}, \hyperpage{32}
+    \subitem {prezentuj\_aktualne\_zakupy}, \hyperpage{32}
+    \subitem {stolik}, \hyperpage{33}
+    \subitem {wypisz}, \hyperpage{32}
+    \subitem {Zamowienie}, \hyperpage{30}
+    \subitem {zamowione\_dania}, \hyperpage{33}
+    \subitem {zloz\_zamowienie}, \hyperpage{33}
+    \subitem {Zrealizowane\_zamowienie}, \hyperpage{36}
+  \item {zamowione\_dania}
+    \subitem {Zamowienie}, \hyperpage{33}
+  \item {zloz\_zamowienie}
+    \subitem {Zamowienie}, \hyperpage{33}
+  \item {znajdz\_wolnego\_kelnera}
+    \subitem {Kuchnia}, \hyperpage{17}
+  \item {znajdz\_wolnego\_kucharza}
+    \subitem {Kuchnia}, \hyperpage{17}
+  \item {znajdz\_wolnego\_pracownika}
+    \subitem {Kelner}, \hyperpage{12}
+    \subitem {Kucharz}, \hyperpage{15}
+    \subitem {Pracownik}, \hyperpage{25}
+  \item {Zrealizowane\_zamowienie}, \hyperpage{34}
+    \subitem {aktualizuj}, \hyperpage{35}
+    \subitem {Danie}, \hyperpage{9}
+    \subitem {ilosc}, \hyperpage{36}
+    \subitem {odwolaj}, \hyperpage{36}
+    \subitem {pokaz\_statystyki}, \hyperpage{36}
+    \subitem {zamowienia}, \hyperpage{36}
+    \subitem {Zamowienie}, \hyperpage{36}
+  \item {zwolnij\_stolik}
+    \subitem {ListaStolikow}, \hyperpage{19}
+
+\end{theindex}

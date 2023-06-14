@@ -1,0 +1,212 @@
+\hypertarget{class_zamowienie}{}\doxysection{Zamowienie Class Reference}
+\label{class_zamowienie}\index{Zamowienie@{Zamowienie}}
+
+
+{\ttfamily \#include $<$zamowienia.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_zamowienie_a9d319934e8239bb0f0d877d78afae678}{Zamowienie}} (\mbox{\hyperlink{class_menu}{Menu}} $\ast$\mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}, \mbox{\hyperlink{class_stolik}{Stolik}} \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}})
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_danie}{Danie}} $>$ \mbox{\hyperlink{class_zamowienie_a7bba28caf8232dec360d1c52a6dcb36b}{pobierz\+\_\+zamowione}} () const
+\item 
+\mbox{\hyperlink{class_stolik}{Stolik}} \mbox{\hyperlink{class_zamowienie_a7d3cf6600a7ca5c2e887ae7ad16d6534}{dostep\+\_\+stolik}} ()
+\item 
+void \mbox{\hyperlink{class_zamowienie_a97ab669d9ab2b6fd3b2f2186d212b27a}{dopisz}} (\mbox{\hyperlink{class_obserwator}{Obserwator}} $\ast$obserwator)
+\item 
+void \mbox{\hyperlink{class_zamowienie_ab06497958b8758ac105352b770cf4533}{wypisz}} (\mbox{\hyperlink{class_obserwator}{Obserwator}} $\ast$obserwator)
+\item 
+bool \mbox{\hyperlink{class_zamowienie_a16093ac06622196963463fa3668a81b9}{zloz\+\_\+zamowienie}} ()
+\item 
+void \mbox{\hyperlink{class_zamowienie_a8023ef51dae839b1bf8204898a5c1133}{dodaj\+\_\+danie\+\_\+do\+\_\+zamowienia}} (int poz)
+\item 
+double \mbox{\hyperlink{class_zamowienie_a4c9d74c4087ac0dbcc10efb0bc5a3315}{oblicz\+\_\+koszt}} ()
+\item 
+double \mbox{\hyperlink{class_zamowienie_ad63d35244b397764922c974be5982fed}{oblicz\+\_\+czas\+\_\+przygotowania}} ()
+\item 
+void \mbox{\hyperlink{class_zamowienie_a4a36034da02d68096ee69fabb4ea9ba0}{pokaz\+\_\+zamowione\+\_\+rzeczy}} ()
+\item 
+void \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\+\_\+aktualne\+\_\+zakupy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_zamowienie_a8ab5b4604eee07b39b24c69f1757de7e}{powiadom}} ()
+\item 
+void \mbox{\hyperlink{class_zamowienie_a2293ea951b11ab5137afacb6d6166b7c}{anuluj}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stolik}{Stolik}} \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_danie}{Danie}} $>$ \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\+\_\+dania}}
+\item 
+\mbox{\hyperlink{class_menu}{Menu}} $\ast$ \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}
+\item 
+std\+::set$<$ \mbox{\hyperlink{class_obserwator}{Obserwator}} $\ast$ $>$ \mbox{\hyperlink{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}{obserwatorzy}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_zamowienie_a9f679144f2d200e1bde96c00e4f7b07f}{ctr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_zamowienie}{Zamowienie}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_zamowienie_a9d319934e8239bb0f0d877d78afae678}\label{class_zamowienie_a9d319934e8239bb0f0d877d78afae678}} 
+\index{Zamowienie@{Zamowienie}!Zamowienie@{Zamowienie}}
+\index{Zamowienie@{Zamowienie}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{Zamowienie()}{Zamowienie()}}
+{\footnotesize\ttfamily Zamowienie\+::\+Zamowienie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu}{Menu}} $\ast$}]{menu,  }\item[{\mbox{\hyperlink{class_stolik}{Stolik}}}]{stolik }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{class_zamowienie}{Zamowienie}} inicjujacy zmienne obiektami podanymi w wejsciu i inkrementujacy ilosc zamowien (ctr) 
+\begin{DoxyParams}{Parameters}
+{\em menu} & wskaznik na menu \\
+\hline
+{\em stolik} & stolik dla ktorego jest zamowienie \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_zamowienie_a2293ea951b11ab5137afacb6d6166b7c}\label{class_zamowienie_a2293ea951b11ab5137afacb6d6166b7c}} 
+\index{Zamowienie@{Zamowienie}!anuluj@{anuluj}}
+\index{anuluj@{anuluj}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{anuluj()}{anuluj()}}
+{\footnotesize\ttfamily void Zamowienie\+::anuluj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Funkcja anulujaca dzialanie obserwatorow \mbox{\Hypertarget{class_zamowienie_a8023ef51dae839b1bf8204898a5c1133}\label{class_zamowienie_a8023ef51dae839b1bf8204898a5c1133}} 
+\index{Zamowienie@{Zamowienie}!dodaj\_danie\_do\_zamowienia@{dodaj\_danie\_do\_zamowienia}}
+\index{dodaj\_danie\_do\_zamowienia@{dodaj\_danie\_do\_zamowienia}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{dodaj\_danie\_do\_zamowienia()}{dodaj\_danie\_do\_zamowienia()}}
+{\footnotesize\ttfamily void Zamowienie\+::dodaj\+\_\+danie\+\_\+do\+\_\+zamowienia (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja dodaje danie do zamowienia param poz pozycja dania z menu \mbox{\Hypertarget{class_zamowienie_a97ab669d9ab2b6fd3b2f2186d212b27a}\label{class_zamowienie_a97ab669d9ab2b6fd3b2f2186d212b27a}} 
+\index{Zamowienie@{Zamowienie}!dopisz@{dopisz}}
+\index{dopisz@{dopisz}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{dopisz()}{dopisz()}}
+{\footnotesize\ttfamily void Zamowienie\+::dopisz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_obserwator}{Obserwator}} $\ast$}]{obserwator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja pozwalajaca dopisac obserwatora do zbioru obserwatorow 
+\begin{DoxyParams}{Parameters}
+{\em obserwator} & obserwator do dodania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_zamowienie_a7d3cf6600a7ca5c2e887ae7ad16d6534}\label{class_zamowienie_a7d3cf6600a7ca5c2e887ae7ad16d6534}} 
+\index{Zamowienie@{Zamowienie}!dostep\_stolik@{dostep\_stolik}}
+\index{dostep\_stolik@{dostep\_stolik}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{dostep\_stolik()}{dostep\_stolik()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stolik}{Stolik}} Zamowienie\+::dostep\+\_\+stolik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwraca stolik \begin{DoxyReturn}{Returns}
+stolik 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zamowienie_ad63d35244b397764922c974be5982fed}\label{class_zamowienie_ad63d35244b397764922c974be5982fed}} 
+\index{Zamowienie@{Zamowienie}!oblicz\_czas\_przygotowania@{oblicz\_czas\_przygotowania}}
+\index{oblicz\_czas\_przygotowania@{oblicz\_czas\_przygotowania}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{oblicz\_czas\_przygotowania()}{oblicz\_czas\_przygotowania()}}
+{\footnotesize\ttfamily double Zamowienie\+::oblicz\+\_\+czas\+\_\+przygotowania (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja obliczajaca czas przygotowania zamowienia \begin{DoxyReturn}{Returns}
+calkowity czas przygotowania zamowienia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zamowienie_a4c9d74c4087ac0dbcc10efb0bc5a3315}\label{class_zamowienie_a4c9d74c4087ac0dbcc10efb0bc5a3315}} 
+\index{Zamowienie@{Zamowienie}!oblicz\_koszt@{oblicz\_koszt}}
+\index{oblicz\_koszt@{oblicz\_koszt}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{oblicz\_koszt()}{oblicz\_koszt()}}
+{\footnotesize\ttfamily double Zamowienie\+::oblicz\+\_\+koszt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja obliczajaca koszt zamowienia \begin{DoxyReturn}{Returns}
+calkowity koszt zamowienia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zamowienie_a7bba28caf8232dec360d1c52a6dcb36b}\label{class_zamowienie_a7bba28caf8232dec360d1c52a6dcb36b}} 
+\index{Zamowienie@{Zamowienie}!pobierz\_zamowione@{pobierz\_zamowione}}
+\index{pobierz\_zamowione@{pobierz\_zamowione}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{pobierz\_zamowione()}{pobierz\_zamowione()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_danie}{Danie}} $>$ Zamowienie\+::pobierz\+\_\+zamowione (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwraca zamowione dania \begin{DoxyReturn}{Returns}
+zamowione\+\_\+dania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zamowienie_a4a36034da02d68096ee69fabb4ea9ba0}\label{class_zamowienie_a4a36034da02d68096ee69fabb4ea9ba0}} 
+\index{Zamowienie@{Zamowienie}!pokaz\_zamowione\_rzeczy@{pokaz\_zamowione\_rzeczy}}
+\index{pokaz\_zamowione\_rzeczy@{pokaz\_zamowione\_rzeczy}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{pokaz\_zamowione\_rzeczy()}{pokaz\_zamowione\_rzeczy()}}
+{\footnotesize\ttfamily void Zamowienie\+::pokaz\+\_\+zamowione\+\_\+rzeczy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja pokazujaca zamowione rzeczy \mbox{\Hypertarget{class_zamowienie_a8ab5b4604eee07b39b24c69f1757de7e}\label{class_zamowienie_a8ab5b4604eee07b39b24c69f1757de7e}} 
+\index{Zamowienie@{Zamowienie}!powiadom@{powiadom}}
+\index{powiadom@{powiadom}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{powiadom()}{powiadom()}}
+{\footnotesize\ttfamily void Zamowienie\+::powiadom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Funkcja powiadamiajaca obserwatorow \mbox{\Hypertarget{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}\label{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}} 
+\index{Zamowienie@{Zamowienie}!prezentuj\_aktualne\_zakupy@{prezentuj\_aktualne\_zakupy}}
+\index{prezentuj\_aktualne\_zakupy@{prezentuj\_aktualne\_zakupy}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{prezentuj\_aktualne\_zakupy()}{prezentuj\_aktualne\_zakupy()}}
+{\footnotesize\ttfamily void Zamowienie\+::prezentuj\+\_\+aktualne\+\_\+zakupy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja prezentujaca aktualne zakupy \mbox{\Hypertarget{class_zamowienie_ab06497958b8758ac105352b770cf4533}\label{class_zamowienie_ab06497958b8758ac105352b770cf4533}} 
+\index{Zamowienie@{Zamowienie}!wypisz@{wypisz}}
+\index{wypisz@{wypisz}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{wypisz()}{wypisz()}}
+{\footnotesize\ttfamily void Zamowienie\+::wypisz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_obserwator}{Obserwator}} $\ast$}]{obserwator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja pozwalajaca usunac obserwatora do zbioru obserwatorow 
+\begin{DoxyParams}{Parameters}
+{\em obserwator} & obserwator do usunieca z listy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_zamowienie_a16093ac06622196963463fa3668a81b9}\label{class_zamowienie_a16093ac06622196963463fa3668a81b9}} 
+\index{Zamowienie@{Zamowienie}!zloz\_zamowienie@{zloz\_zamowienie}}
+\index{zloz\_zamowienie@{zloz\_zamowienie}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{zloz\_zamowienie()}{zloz\_zamowienie()}}
+{\footnotesize\ttfamily bool Zamowienie\+::zloz\+\_\+zamowienie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja do skladania zamowienia \begin{DoxyReturn}{Returns}
+true jesli sie udalo zamowic, false jesli nie 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_zamowienie_a9f679144f2d200e1bde96c00e4f7b07f}\label{class_zamowienie_a9f679144f2d200e1bde96c00e4f7b07f}} 
+\index{Zamowienie@{Zamowienie}!ctr@{ctr}}
+\index{ctr@{ctr}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{ctr}{ctr}}
+{\footnotesize\ttfamily int Zamowienie\+::ctr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+licznik zamowien \mbox{\Hypertarget{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}\label{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}} 
+\index{Zamowienie@{Zamowienie}!menu@{menu}}
+\index{menu@{menu}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu}{Menu}}$\ast$ Zamowienie\+::menu\hspace{0.3cm}{\ttfamily [protected]}}
+
+wskaznik na klase \mbox{\hyperlink{class_menu}{Menu}} \mbox{\Hypertarget{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}\label{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}} 
+\index{Zamowienie@{Zamowienie}!obserwatorzy@{obserwatorzy}}
+\index{obserwatorzy@{obserwatorzy}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{obserwatorzy}{obserwatorzy}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{class_obserwator}{Obserwator}}$\ast$$>$ Zamowienie\+::obserwatorzy\hspace{0.3cm}{\ttfamily [protected]}}
+
+kontener typu set przetrzymujacy wskazniki na obserwatorow \mbox{\Hypertarget{class_zamowienie_a3b98b614a486e736c7463a468f08b512}\label{class_zamowienie_a3b98b614a486e736c7463a468f08b512}} 
+\index{Zamowienie@{Zamowienie}!stolik@{stolik}}
+\index{stolik@{stolik}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{stolik}{stolik}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stolik}{Stolik}} Zamowienie\+::stolik\hspace{0.3cm}{\ttfamily [protected]}}
+
+stolik do ktorego ma byc zrealizowane zamowienie \mbox{\Hypertarget{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}\label{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}} 
+\index{Zamowienie@{Zamowienie}!zamowione\_dania@{zamowione\_dania}}
+\index{zamowione\_dania@{zamowione\_dania}!Zamowienie@{Zamowienie}}
+\doxysubsubsection{\texorpdfstring{zamowione\_dania}{zamowione\_dania}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_danie}{Danie}}$>$ Zamowienie\+::zamowione\+\_\+dania\hspace{0.3cm}{\ttfamily [protected]}}
+
+tablica wektorowa Dan 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{zamowienia_8h}{zamowienia.\+h}}\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{funkcje_8cpp}{funkcje.\+cpp}}\end{DoxyCompactItemize}

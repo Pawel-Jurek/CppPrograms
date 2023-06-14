@@ -1,0 +1,113 @@
+\hypertarget{class_kelner}{}\doxysection{Kelner Class Reference}
+\label{class_kelner}\index{Kelner@{Kelner}}
+
+
+{\ttfamily \#include $<$pracownicy.\+h$>$}
+
+Inheritance diagram for Kelner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_kelner}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kelner_a4d0074f53b541381857c190beb853c39}{Kelner}} (std\+::string \mbox{\hyperlink{class_pracownik_a36f6a895f7e7cd36ddb72506d803bc9b}{imie}}, std\+::string \mbox{\hyperlink{class_pracownik_a1109bce406462231846a743cd0aa7e0f}{nazwisko}})
+\item 
+void \mbox{\hyperlink{class_kelner_a3a1f3d0de13225f34fb0515bcf1df4cb}{aktualizuj}} (\mbox{\hyperlink{class_zamowienie}{Zamowienie}} \&h) override
+\item 
+void \mbox{\hyperlink{class_kelner_abba7dc9f891ed12a2cc1b5b80afdda7a}{odwolaj}} () override
+\item 
+void \mbox{\hyperlink{class_kelner_af04943b278ae9c7733aedb50e5966834}{wyswietl\+\_\+pracownika}} () override
+\item 
+\mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ \mbox{\hyperlink{class_kelner_ad2fa01c207de356474b94ec39f1617eb}{znajdz\+\_\+wolnego\+\_\+pracownika}} () override
+\item 
+void \mbox{\hyperlink{class_kelner_a303c368a2b6cd7f762248b296bcdfe7b}{zajmij\+\_\+wolnego\+\_\+pracownika}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_kelner}{Kelner}} dziedziczaca publicznie po klasie \mbox{\hyperlink{class_pracownik}{Pracownik}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kelner_a4d0074f53b541381857c190beb853c39}\label{class_kelner_a4d0074f53b541381857c190beb853c39}} 
+\index{Kelner@{Kelner}!Kelner@{Kelner}}
+\index{Kelner@{Kelner}!Kelner@{Kelner}}
+\doxysubsubsection{\texorpdfstring{Kelner()}{Kelner()}}
+{\footnotesize\ttfamily Kelner\+::\+Kelner (\begin{DoxyParamCaption}\item[{std\+::string}]{imie,  }\item[{std\+::string}]{nazwisko }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{class_kelner}{Kelner}} inicjujacy zmienne wartosciami podanymi w konstruktorze, korzysta z konstruktora klasy bazowej \mbox{\hyperlink{class_pracownik}{Pracownik}} 
+\begin{DoxyParams}{Parameters}
+{\em imie} & imie pracownika \\
+\hline
+{\em nazwisko} & nazwisko pracownika \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kelner_a3a1f3d0de13225f34fb0515bcf1df4cb}\label{class_kelner_a3a1f3d0de13225f34fb0515bcf1df4cb}} 
+\index{Kelner@{Kelner}!aktualizuj@{aktualizuj}}
+\index{aktualizuj@{aktualizuj}!Kelner@{Kelner}}
+\doxysubsubsection{\texorpdfstring{aktualizuj()}{aktualizuj()}}
+{\footnotesize\ttfamily void Kelner\+::aktualizuj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_zamowienie}{Zamowienie}} \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja aktualizuje kelnera, to znaczy przydziela mu zamowienie i karze mu je dostarczyc 
+\begin{DoxyParams}{Parameters}
+{\em zam} & zamowienie przekazane do realizacji \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_pracownik_a8f5ae183ed1689ddc8c646d944ad306d}{Pracownik}}.
+
+\mbox{\Hypertarget{class_kelner_abba7dc9f891ed12a2cc1b5b80afdda7a}\label{class_kelner_abba7dc9f891ed12a2cc1b5b80afdda7a}} 
+\index{Kelner@{Kelner}!odwolaj@{odwolaj}}
+\index{odwolaj@{odwolaj}!Kelner@{Kelner}}
+\doxysubsubsection{\texorpdfstring{odwolaj()}{odwolaj()}}
+{\footnotesize\ttfamily void Kelner\+::odwolaj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja dezaktywuje kelnera 
+
+Implements \mbox{\hyperlink{class_obserwator_a6481e51672d080cd3516ba891725e0c2}{Obserwator}}.
+
+\mbox{\Hypertarget{class_kelner_af04943b278ae9c7733aedb50e5966834}\label{class_kelner_af04943b278ae9c7733aedb50e5966834}} 
+\index{Kelner@{Kelner}!wyswietl\_pracownika@{wyswietl\_pracownika}}
+\index{wyswietl\_pracownika@{wyswietl\_pracownika}!Kelner@{Kelner}}
+\doxysubsubsection{\texorpdfstring{wyswietl\_pracownika()}{wyswietl\_pracownika()}}
+{\footnotesize\ttfamily void Kelner\+::wyswietl\+\_\+pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja wyswietla pracownika -\/\texorpdfstring{$>$}{>} tutaj kelnera 
+
+Implements \mbox{\hyperlink{class_pracownik_af7f7cc80e26b6a41c6b00dd2dca693b2}{Pracownik}}.
+
+\mbox{\Hypertarget{class_kelner_a303c368a2b6cd7f762248b296bcdfe7b}\label{class_kelner_a303c368a2b6cd7f762248b296bcdfe7b}} 
+\index{Kelner@{Kelner}!zajmij\_wolnego\_pracownika@{zajmij\_wolnego\_pracownika}}
+\index{zajmij\_wolnego\_pracownika@{zajmij\_wolnego\_pracownika}!Kelner@{Kelner}}
+\doxysubsubsection{\texorpdfstring{zajmij\_wolnego\_pracownika()}{zajmij\_wolnego\_pracownika()}}
+{\footnotesize\ttfamily void Kelner\+::zajmij\+\_\+wolnego\+\_\+pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja zajmuje wolnego pracownika w tym przypadku kelnera 
+
+Implements \mbox{\hyperlink{class_pracownik_a61e416f87826a390d77b5616da3591ba}{Pracownik}}.
+
+\mbox{\Hypertarget{class_kelner_ad2fa01c207de356474b94ec39f1617eb}\label{class_kelner_ad2fa01c207de356474b94ec39f1617eb}} 
+\index{Kelner@{Kelner}!znajdz\_wolnego\_pracownika@{znajdz\_wolnego\_pracownika}}
+\index{znajdz\_wolnego\_pracownika@{znajdz\_wolnego\_pracownika}!Kelner@{Kelner}}
+\doxysubsubsection{\texorpdfstring{znajdz\_wolnego\_pracownika()}{znajdz\_wolnego\_pracownika()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ Kelner\+::znajdz\+\_\+wolnego\+\_\+pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja szuka wolnego pracownika i ponadto znajduje takowego \begin{DoxyReturn}{Returns}
+wskaznik na wolnego pracownika, no w tym przypadku nie da sie ukryc ze to bedzie kelner. A jesli nie znajdzie wolnego to wtedy zwraca nullptr 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_pracownik_a3453456507025f7bc7946140ea9ecc0a}{Pracownik}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{pracownicy_8h}{pracownicy.\+h}}\end{DoxyCompactItemize}

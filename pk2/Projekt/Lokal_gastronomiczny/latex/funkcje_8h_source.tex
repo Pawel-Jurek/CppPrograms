@@ -1,0 +1,54 @@
+\hypertarget{funkcje_8h_source}{}\doxysection{funkcje.\+h}
+\label{funkcje_8h_source}\index{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/funkcje.h@{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/funkcje.h}}
+\mbox{\hyperlink{funkcje_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stolik_8h}{stolik.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}windows.h"{}} }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{15 \textcolor{keywordtype}{int} \mbox{\hyperlink{funkcje_8h_ab36d80df38e04e5a451b8782202023e5}{wyznacz\_id\_wolny\_stolik\_min\_os}}(std::vector<Stolik>stoliki, std::vector<int> pozycje);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18 \textcolor{keywordtype}{void} \mbox{\hyperlink{funkcje_8h_a601a022cb787d206ac9fd482f9a9e78f}{pokaz\_menu\_dzialania\_zamowienie}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21 \textcolor{keywordtype}{void} \mbox{\hyperlink{funkcje_8h_afc37fafd4b0d11e68156b3e7b72ddb78}{pokaz\_menu\_dzialania\_wstep}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{28 T \mbox{\hyperlink{funkcje_8h_a28a6d345cfad228e08b41febafd4bb0c}{konwerter\_ze\_stringa}}(std::string wyraz)}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30     T wynik = 0;}
+\DoxyCodeLine{31     \textcolor{keyword}{auto} it = wyraz.find(\textcolor{charliteral}{'.'});}
+\DoxyCodeLine{32     \textcolor{keywordflow}{if} (it == std::string::npos)}
+\DoxyCodeLine{33     \{}
+\DoxyCodeLine{34         it = 0;}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{37     \textcolor{keywordtype}{bool} calkowite = \textcolor{keyword}{true};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} i\_po\_przecinku=1;}
+\DoxyCodeLine{39     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i <wyraz.size(); i++)}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41         \textcolor{keywordflow}{if} (wyraz[i] == \textcolor{charliteral}{'.'})}
+\DoxyCodeLine{42         \{}
+\DoxyCodeLine{43             i++;}
+\DoxyCodeLine{44             calkowite = \textcolor{keyword}{false};  }
+\DoxyCodeLine{45             \textcolor{keywordflow}{if} (i >= wyraz.size()) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{46         \}}
+\DoxyCodeLine{47         \textcolor{keywordflow}{if} (calkowite)}
+\DoxyCodeLine{48         \{}
+\DoxyCodeLine{49             wynik += ((T)wyraz[i] -\/ \textcolor{charliteral}{'0'}) * pow(10, wyraz.size()-\/it-\/i-\/1);}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51             }
+\DoxyCodeLine{52         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{53         \{}
+\DoxyCodeLine{54             wynik += ((T)wyraz[i] -\/ \textcolor{charliteral}{'0'}) * pow(10, (0 -\/ i\_po\_przecinku));}
+\DoxyCodeLine{55             i\_po\_przecinku++;}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57             }
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59     \textcolor{keywordflow}{return} wynik;}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}

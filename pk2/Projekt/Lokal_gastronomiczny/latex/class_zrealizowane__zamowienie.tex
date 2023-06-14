@@ -1,0 +1,102 @@
+\hypertarget{class_zrealizowane__zamowienie}{}\doxysection{Zrealizowane\+\_\+zamowienie Class Reference}
+\label{class_zrealizowane__zamowienie}\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+
+
+{\ttfamily \#include $<$zrealizowane\+\_\+zamowienie.\+h$>$}
+
+Inheritance diagram for Zrealizowane\+\_\+zamowienie\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_zrealizowane__zamowienie}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_zrealizowane__zamowienie_aba1b3d3100daf0f5c0cb6bb6d650c1ef}{aktualizuj}} (\mbox{\hyperlink{class_zamowienie}{Zamowienie}} \&zam) override
+\item 
+void \mbox{\hyperlink{class_zrealizowane__zamowienie_a1fcb1dfc9b525ca4e784b5f2ad680b60}{odwolaj}} () override
+\item 
+void \mbox{\hyperlink{class_zrealizowane__zamowienie_a3f8dc7fa950fe10d5077d6fda939d6cb}{pokaz\+\_\+statystyki}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ \mbox{\hyperlink{class_danie}{Danie}}, int $>$ \mbox{\hyperlink{class_zrealizowane__zamowienie_abf66111a01a555687908ab67f8626f73}{ilosc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_zamowienie}{Zamowienie}} $>$ \mbox{\hyperlink{class_zrealizowane__zamowienie_ad53eedbdb6dbbe39f749ed9ccc3636ab}{zamowienia}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_zrealizowane__zamowienie_a4e3f3c84f3907b2fb9894c87939aa841}{Zamowienie}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_zrealizowane__zamowienie}{Zrealizowane\+\_\+zamowienie}} dziedziczaca publicznie po klasie \mbox{\hyperlink{class_obserwator}{Obserwator}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_zrealizowane__zamowienie_aba1b3d3100daf0f5c0cb6bb6d650c1ef}\label{class_zrealizowane__zamowienie_aba1b3d3100daf0f5c0cb6bb6d650c1ef}} 
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!aktualizuj@{aktualizuj}}
+\index{aktualizuj@{aktualizuj}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\doxysubsubsection{\texorpdfstring{aktualizuj()}{aktualizuj()}}
+{\footnotesize\ttfamily void Zrealizowane\+\_\+zamowienie\+::aktualizuj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_zamowienie}{Zamowienie}} \&}]{zam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja dodajaca nowe dania do \char`\"{}magazynu\char`\"{}, ktore uprzednio zostaly zrealizowane 
+\begin{DoxyParams}{Parameters}
+{\em zam} & zamowienie, ktore zostalo zamowione \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_obserwator_a4bc7f3e7702cfa0ed10bc7a2aa9123aa}{Obserwator}}.
+
+\mbox{\Hypertarget{class_zrealizowane__zamowienie_a1fcb1dfc9b525ca4e784b5f2ad680b60}\label{class_zrealizowane__zamowienie_a1fcb1dfc9b525ca4e784b5f2ad680b60}} 
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!odwolaj@{odwolaj}}
+\index{odwolaj@{odwolaj}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\doxysubsubsection{\texorpdfstring{odwolaj()}{odwolaj()}}
+{\footnotesize\ttfamily void Zrealizowane\+\_\+zamowienie\+::odwolaj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Funkcja nic nie robi, ale musi byc jako ze jest pochodna od virtualnej 
+
+Implements \mbox{\hyperlink{class_obserwator_a6481e51672d080cd3516ba891725e0c2}{Obserwator}}.
+
+\mbox{\Hypertarget{class_zrealizowane__zamowienie_a3f8dc7fa950fe10d5077d6fda939d6cb}\label{class_zrealizowane__zamowienie_a3f8dc7fa950fe10d5077d6fda939d6cb}} 
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!pokaz\_statystyki@{pokaz\_statystyki}}
+\index{pokaz\_statystyki@{pokaz\_statystyki}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\doxysubsubsection{\texorpdfstring{pokaz\_statystyki()}{pokaz\_statystyki()}}
+{\footnotesize\ttfamily void Zrealizowane\+\_\+zamowienie\+::pokaz\+\_\+statystyki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja pokazujaca statystyki, to znaczy zawartosc magazynu 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_zrealizowane__zamowienie_a4e3f3c84f3907b2fb9894c87939aa841}\label{class_zrealizowane__zamowienie_a4e3f3c84f3907b2fb9894c87939aa841}} 
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!Zamowienie@{Zamowienie}}
+\index{Zamowienie@{Zamowienie}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\doxysubsubsection{\texorpdfstring{Zamowienie}{Zamowienie}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_zamowienie}{Zamowienie}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+zakolegowanie klasy \mbox{\hyperlink{class_zamowienie}{Zamowienie}} z klasa \mbox{\hyperlink{class_zrealizowane__zamowienie}{Zrealizowane\+\_\+zamowienie}} 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_zrealizowane__zamowienie_abf66111a01a555687908ab67f8626f73}\label{class_zrealizowane__zamowienie_abf66111a01a555687908ab67f8626f73}} 
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!ilosc@{ilosc}}
+\index{ilosc@{ilosc}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\doxysubsubsection{\texorpdfstring{ilosc}{ilosc}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{class_danie}{Danie}}, int$>$ Zrealizowane\+\_\+zamowienie\+::ilosc\hspace{0.3cm}{\ttfamily [protected]}}
+
+kontener typu mapa, bedacy magazynem zrealizowanych dan \mbox{\Hypertarget{class_zrealizowane__zamowienie_ad53eedbdb6dbbe39f749ed9ccc3636ab}\label{class_zrealizowane__zamowienie_ad53eedbdb6dbbe39f749ed9ccc3636ab}} 
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!zamowienia@{zamowienia}}
+\index{zamowienia@{zamowienia}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\doxysubsubsection{\texorpdfstring{zamowienia}{zamowienia}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_zamowienie}{Zamowienie}}$>$ Zrealizowane\+\_\+zamowienie\+::zamowienia\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+vector Zamowien 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{zrealizowane__zamowienie_8h}{zrealizowane\+\_\+zamowienie.\+h}}\end{DoxyCompactItemize}

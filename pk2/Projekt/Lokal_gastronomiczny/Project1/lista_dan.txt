@@ -1,0 +1,3 @@
+schabowy 7 200 15.5
+ziemniaki 5 300 12
+surowka 2 100 8

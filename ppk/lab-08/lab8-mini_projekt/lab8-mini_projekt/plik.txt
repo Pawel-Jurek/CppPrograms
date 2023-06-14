@@ -1,0 +1,8 @@
+To jest pierwsza linia% remove
+Ta zostanie bez zmian
+W tej usuniemy samogloski % remove aeyiou
+W 	tej policzymy biale znaki %count
+
+Wyzej byla pusta, w wyjsciu jej nie bedzie % count yewj
+		 
+Wyzej jest znow pusta, ale tym razem z bialymi znakami, tez bedzie pominieta, a slowo bialymi zostanie tutaj zastapione przez czarnymi % replace bialymi czarnymi

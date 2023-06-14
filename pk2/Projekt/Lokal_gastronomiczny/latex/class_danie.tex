@@ -1,0 +1,129 @@
+\hypertarget{class_danie}{}\doxysection{Danie Class Reference}
+\label{class_danie}\index{Danie@{Danie}}
+
+
+{\ttfamily \#include $<$dania.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_danie_aa296be05230a5057e3ff96f39f078d69}{Danie}} (std\+::string \mbox{\hyperlink{class_danie_a1fc30c8ed6842084874e3b46bc98d029}{nazwa}}, int czas\+\_\+przygotowania, int \mbox{\hyperlink{class_danie_ac40d65460c9e36488054d54114aed4f4}{wielkosc\+\_\+porcji}}, double \mbox{\hyperlink{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}{cena}})
+\item 
+int \mbox{\hyperlink{class_danie_a66388cd75ea365e9759f865923a0244c}{pokaz\+\_\+czas}} ()
+\item 
+auto \mbox{\hyperlink{class_danie_aacc67fc6a493b829a7d0d78fb52a32db}{operator$<$=$>$}} (const \mbox{\hyperlink{class_danie}{Danie}} \&rhs) const =default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_danie_a1fc30c8ed6842084874e3b46bc98d029}{nazwa}}
+\item 
+int \mbox{\hyperlink{class_danie_a27f897cb2f72be18eb66098c6d96696f}{czas\+\_\+przygotwania}}
+\item 
+int \mbox{\hyperlink{class_danie_ac40d65460c9e36488054d54114aed4f4}{wielkosc\+\_\+porcji}}
+\item 
+double \mbox{\hyperlink{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}{cena}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_danie_a4e3f3c84f3907b2fb9894c87939aa841}{Zamowienie}}
+\item 
+class \mbox{\hyperlink{class_danie_a8f241312ba92cc267ce7b6f23bcc675c}{Zrealizowane\+\_\+zamowienie}}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_danie_a8f724bdea5ab3df596c01030c359f20b}{operator$<$$<$}} (std\+::ostream \&s, const \mbox{\hyperlink{class_danie}{Danie}} \&danie)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisujaca parametry dania 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_danie_aa296be05230a5057e3ff96f39f078d69}\label{class_danie_aa296be05230a5057e3ff96f39f078d69}} 
+\index{Danie@{Danie}!Danie@{Danie}}
+\index{Danie@{Danie}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{Danie()}{Danie()}}
+{\footnotesize\ttfamily Danie\+::\+Danie (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa,  }\item[{int}]{czas\+\_\+przygotowania,  }\item[{int}]{wielkosc\+\_\+porcji,  }\item[{double}]{cena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{class_danie}{Danie}} inicjuje zmienne wartosciami podanymi do konstruktora 
+\begin{DoxyParams}{Parameters}
+{\em nazwa} & nazwa dania \\
+\hline
+{\em czas\+\_\+przygotowania} & czas przygotowania dania \\
+\hline
+{\em wielkosc\+\_\+porcji} & wielkosc porcji dania \\
+\hline
+{\em cena} & cena dania \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_danie_aacc67fc6a493b829a7d0d78fb52a32db}\label{class_danie_aacc67fc6a493b829a7d0d78fb52a32db}} 
+\index{Danie@{Danie}!operator$<$=$>$@{operator$<$=$>$}}
+\index{operator$<$=$>$@{operator$<$=$>$}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{operator$<$=$>$()}{operator<=>()}}
+{\footnotesize\ttfamily auto Danie\+::operator$<$=$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_danie}{Danie}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [default]}}
+
+Domyslny operator spaceship dla wlasnego typu \mbox{\Hypertarget{class_danie_a66388cd75ea365e9759f865923a0244c}\label{class_danie_a66388cd75ea365e9759f865923a0244c}} 
+\index{Danie@{Danie}!pokaz\_czas@{pokaz\_czas}}
+\index{pokaz\_czas@{pokaz\_czas}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{pokaz\_czas()}{pokaz\_czas()}}
+{\footnotesize\ttfamily int Danie\+::pokaz\+\_\+czas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwracajaca czas przygotowania \begin{DoxyReturn}{Returns}
+funkcja zwraca czas przygotowania dania 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_danie_a8f724bdea5ab3df596c01030c359f20b}\label{class_danie_a8f724bdea5ab3df596c01030c359f20b}} 
+\index{Danie@{Danie}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s,  }\item[{const \mbox{\hyperlink{class_danie}{Danie}} \&}]{danie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+zakolegowanie funkcji przeciazajacej operator Dania z klasa Dania \mbox{\Hypertarget{class_danie_a4e3f3c84f3907b2fb9894c87939aa841}\label{class_danie_a4e3f3c84f3907b2fb9894c87939aa841}} 
+\index{Danie@{Danie}!Zamowienie@{Zamowienie}}
+\index{Zamowienie@{Zamowienie}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{Zamowienie}{Zamowienie}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_zamowienie}{Zamowienie}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+zakolegowanie klasy \mbox{\hyperlink{class_zamowienie}{Zamowienie}} z klasa \mbox{\hyperlink{class_danie}{Danie}} \mbox{\Hypertarget{class_danie_a8f241312ba92cc267ce7b6f23bcc675c}\label{class_danie_a8f241312ba92cc267ce7b6f23bcc675c}} 
+\index{Danie@{Danie}!Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}}
+\index{Zrealizowane\_zamowienie@{Zrealizowane\_zamowienie}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{Zrealizowane\_zamowienie}{Zrealizowane\_zamowienie}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_zrealizowane__zamowienie}{Zrealizowane\+\_\+zamowienie}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+zakolegowanie klasy \mbox{\hyperlink{class_zrealizowane__zamowienie}{Zrealizowane\+\_\+zamowienie}} z klasa \mbox{\hyperlink{class_danie}{Danie}} 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}\label{class_danie_a6daecb6f53611d54a2fe0ef5a637e9c6}} 
+\index{Danie@{Danie}!cena@{cena}}
+\index{cena@{cena}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{cena}{cena}}
+{\footnotesize\ttfamily double Danie\+::cena\hspace{0.3cm}{\ttfamily [protected]}}
+
+cena dania w zlotowkach \mbox{\Hypertarget{class_danie_a27f897cb2f72be18eb66098c6d96696f}\label{class_danie_a27f897cb2f72be18eb66098c6d96696f}} 
+\index{Danie@{Danie}!czas\_przygotwania@{czas\_przygotwania}}
+\index{czas\_przygotwania@{czas\_przygotwania}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{czas\_przygotwania}{czas\_przygotwania}}
+{\footnotesize\ttfamily int Danie\+::czas\+\_\+przygotwania\hspace{0.3cm}{\ttfamily [protected]}}
+
+czas przygotowania dania w minutosekundach (normalnie to byly by minuty, ale czekac az zrobi sie zamowienie kilka minut, to troche bez sensu, dlatego 1min=1sec \mbox{\Hypertarget{class_danie_a1fc30c8ed6842084874e3b46bc98d029}\label{class_danie_a1fc30c8ed6842084874e3b46bc98d029}} 
+\index{Danie@{Danie}!nazwa@{nazwa}}
+\index{nazwa@{nazwa}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{nazwa}{nazwa}}
+{\footnotesize\ttfamily std\+::string Danie\+::nazwa\hspace{0.3cm}{\ttfamily [protected]}}
+
+nazwa dania \mbox{\Hypertarget{class_danie_ac40d65460c9e36488054d54114aed4f4}\label{class_danie_ac40d65460c9e36488054d54114aed4f4}} 
+\index{Danie@{Danie}!wielkosc\_porcji@{wielkosc\_porcji}}
+\index{wielkosc\_porcji@{wielkosc\_porcji}!Danie@{Danie}}
+\doxysubsubsection{\texorpdfstring{wielkosc\_porcji}{wielkosc\_porcji}}
+{\footnotesize\ttfamily int Danie\+::wielkosc\+\_\+porcji\hspace{0.3cm}{\ttfamily [protected]}}
+
+wielkosc porcji w gramach 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{dania_8h}{dania.\+h}}\end{DoxyCompactItemize}

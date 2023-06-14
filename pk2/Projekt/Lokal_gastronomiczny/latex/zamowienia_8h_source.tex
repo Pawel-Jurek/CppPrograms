@@ -1,0 +1,190 @@
+\hypertarget{zamowienia_8h_source}{}\doxysection{zamowienia.\+h}
+\label{zamowienia_8h_source}\index{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/zamowienia.h@{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/zamowienia.h}}
+\mbox{\hyperlink{zamowienia_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <set>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dania_8h}{dania.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}windows.h"{}} }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_zamowienie}{Zamowienie}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_obserwator}{Obserwator}} \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_obserwator_a3b185b966063efb1279b495a73a9385e}{\string~Obserwator}}() \{\}                         }
+\DoxyCodeLine{22     }
+\DoxyCodeLine{26     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_obserwator_a4bc7f3e7702cfa0ed10bc7a2aa9123aa}{aktualizuj}}(\mbox{\hyperlink{class_zamowienie}{Zamowienie}}\& zamowienie) = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_obserwator_a6481e51672d080cd3516ba891725e0c2}{odwolaj}}() = 0;  }
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{35 \textcolor{keyword}{class }\mbox{\hyperlink{class_zamowienie}{Zamowienie}}}
+\DoxyCodeLine{36 \{}
+\DoxyCodeLine{37 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{38     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_zamowienie_a9f679144f2d200e1bde96c00e4f7b07f}{ctr}};                          }
+\DoxyCodeLine{39     \mbox{\hyperlink{class_stolik}{Stolik}} \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}};                          }
+\DoxyCodeLine{40     std::vector<Danie>\mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}};       }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_menu}{Menu}}* \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}};                             }
+\DoxyCodeLine{42     std::set<Obserwator*> \mbox{\hyperlink{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}{obserwatorzy}};     }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_a8ab5b4604eee07b39b24c69f1757de7e}{powiadom}}() \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& o : \mbox{\hyperlink{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}{obserwatorzy}}) \{}
+\DoxyCodeLine{47             o-\/>aktualizuj(*\textcolor{keyword}{this});}
+\DoxyCodeLine{48         \}}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_a2293ea951b11ab5137afacb6d6166b7c}{anuluj}}() \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& o : \mbox{\hyperlink{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}{obserwatorzy}}) \{}
+\DoxyCodeLine{54             o-\/>odwolaj();}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57 \textcolor{keyword}{public}:}
+\DoxyCodeLine{62     \mbox{\hyperlink{class_zamowienie_a9d319934e8239bb0f0d877d78afae678}{Zamowienie}}(\mbox{\hyperlink{class_menu}{Menu}}* \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}, \mbox{\hyperlink{class_stolik}{Stolik}} \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}}) : \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}(\mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}), \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}}(\mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}}) \{ \mbox{\hyperlink{class_zamowienie_a9f679144f2d200e1bde96c00e4f7b07f}{ctr}}++; \};}
+\DoxyCodeLine{63     }
+\DoxyCodeLine{67     std::vector<Danie>\mbox{\hyperlink{class_zamowienie_a7bba28caf8232dec360d1c52a6dcb36b}{pobierz\_zamowione}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}; \}}
+\DoxyCodeLine{68     }
+\DoxyCodeLine{72     \mbox{\hyperlink{class_stolik}{Stolik}} \mbox{\hyperlink{class_zamowienie_a7d3cf6600a7ca5c2e887ae7ad16d6534}{dostep\_stolik}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}}; \}}
+\DoxyCodeLine{73     }
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_a97ab669d9ab2b6fd3b2f2186d212b27a}{dopisz}}(\mbox{\hyperlink{class_obserwator}{Obserwator}}* obserwator) \{}
+\DoxyCodeLine{78         \mbox{\hyperlink{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}{obserwatorzy}}.insert(obserwator);}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_ab06497958b8758ac105352b770cf4533}{wypisz}}(\mbox{\hyperlink{class_obserwator}{Obserwator}}* obserwator) \{}
+\DoxyCodeLine{85         \mbox{\hyperlink{class_zamowienie_af0d289c66bda06f3b42478addf4dfb56}{obserwatorzy}}.erase(obserwator);}
+\DoxyCodeLine{86     \}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_zamowienie_a16093ac06622196963463fa3668a81b9}{zloz\_zamowienie}}()}
+\DoxyCodeLine{92     \{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{94         \{}
+\DoxyCodeLine{95             \mbox{\hyperlink{funkcje_8cpp_a601a022cb787d206ac9fd482f9a9e78f}{pokaz\_menu\_dzialania\_zamowienie}}();}
+\DoxyCodeLine{96             \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}();}
+\DoxyCodeLine{97             std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nTwoj wybor: "{}};}
+\DoxyCodeLine{98             \textcolor{keywordtype}{char} instruktator;}
+\DoxyCodeLine{99             std::cin >> instruktator;}
+\DoxyCodeLine{100             }
+\DoxyCodeLine{101             \textcolor{keywordflow}{switch} (instruktator)}
+\DoxyCodeLine{102             \{}
+\DoxyCodeLine{103             \textcolor{keywordflow}{case} \textcolor{charliteral}{'d'}:}
+\DoxyCodeLine{104                 \textcolor{keywordflow}{for} (;;)}
+\DoxyCodeLine{105                 \{}
+\DoxyCodeLine{106                     \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}-\/>\mbox{\hyperlink{class_menu_a27536e490d64a8aaf421e52da99e2c0a}{wyswietl\_menu}}();}
+\DoxyCodeLine{107                     \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}();}
+\DoxyCodeLine{108                     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nDodaj danie do zamowienia: "{}};}
+\DoxyCodeLine{109                     \textcolor{keyword}{static} \textcolor{keywordtype}{int} numer;}
+\DoxyCodeLine{110                     std::cin >> numer;}
+\DoxyCodeLine{111                     \textcolor{keywordflow}{if} (numer > 0 \&\& numer <= menu-\/>lista\_dan.size())}
+\DoxyCodeLine{112                     \{}
+\DoxyCodeLine{113                         \mbox{\hyperlink{class_zamowienie_a8023ef51dae839b1bf8204898a5c1133}{dodaj\_danie\_do\_zamowienia}}(numer);}
+\DoxyCodeLine{114                     \}}
+\DoxyCodeLine{115                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (numer > 0)}
+\DoxyCodeLine{116                     \{}
+\DoxyCodeLine{117                         \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}();}
+\DoxyCodeLine{118                         \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}-\/>\mbox{\hyperlink{class_menu_a27536e490d64a8aaf421e52da99e2c0a}{wyswietl\_menu}}();}
+\DoxyCodeLine{119                         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nBrak potrawy o podanym numerze :("{}};}
+\DoxyCodeLine{120                         Sleep(2000);}
+\DoxyCodeLine{121                     \}}
+\DoxyCodeLine{122                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{123                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{124                 \}}
+\DoxyCodeLine{125                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{126             \textcolor{keywordflow}{case} \textcolor{charliteral}{'u'}:}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{for} (;;)}
+\DoxyCodeLine{128                 \{}
+\DoxyCodeLine{129                     \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}-\/>\mbox{\hyperlink{class_menu_a27536e490d64a8aaf421e52da99e2c0a}{wyswietl\_menu}}();}
+\DoxyCodeLine{130                     \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}();}
+\DoxyCodeLine{131                     \textcolor{keywordtype}{int} numer;}
+\DoxyCodeLine{132                     std::cout << \textcolor{stringliteral}{"{}Podaj pozycje dania do usuniecia: "{}}; std::cin >> numer;}
+\DoxyCodeLine{133                     \textcolor{keywordflow}{if} (numer > 0 \&\& numer <= \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.size())}
+\DoxyCodeLine{134                     \{}
+\DoxyCodeLine{135                         \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.erase(\mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.begin() + numer -\/ 1);}
+\DoxyCodeLine{136                         \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}();}
+\DoxyCodeLine{137                     \}}
+\DoxyCodeLine{138                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (numer > 0)}
+\DoxyCodeLine{139                     \{}
+\DoxyCodeLine{140                         \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}();}
+\DoxyCodeLine{141                         \mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}-\/>\mbox{\hyperlink{class_menu_a27536e490d64a8aaf421e52da99e2c0a}{wyswietl\_menu}}();}
+\DoxyCodeLine{142                         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nBrak potrawy o podanym numerze :("{}};}
+\DoxyCodeLine{143                         Sleep(2000);}
+\DoxyCodeLine{144                     \}}
+\DoxyCodeLine{145                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{146                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{147                 \}}
+\DoxyCodeLine{148                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{149             \textcolor{keywordflow}{case} \textcolor{charliteral}{'v'}:}
+\DoxyCodeLine{150                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.empty())}
+\DoxyCodeLine{151                 \{}
+\DoxyCodeLine{152                     std::cout << \textcolor{stringliteral}{"{}Twoje zamowienie zostalo dodane do kolejki w kuchni\(\backslash\)n"{}};}
+\DoxyCodeLine{153                     \mbox{\hyperlink{class_zamowienie_a8ab5b4604eee07b39b24c69f1757de7e}{powiadom}}();}
+\DoxyCodeLine{154                 \}}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{156                 \{}
+\DoxyCodeLine{157                     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nTwoja lista zakupow jest pusta, zamowienie nie zostalo zrealizowane\(\backslash\)n"{}};}
+\DoxyCodeLine{158                     \mbox{\hyperlink{class_zamowienie_a2293ea951b11ab5137afacb6d6166b7c}{anuluj}}();}
+\DoxyCodeLine{159                 \}}
+\DoxyCodeLine{160                 Sleep(3000);}
+\DoxyCodeLine{161                 system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{162                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{163             \textcolor{keywordflow}{case} \textcolor{charliteral}{'x'}:}
+\DoxyCodeLine{164                 \mbox{\hyperlink{class_zamowienie_a2293ea951b11ab5137afacb6d6166b7c}{anuluj}}();}
+\DoxyCodeLine{165                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{166             \}}
+\DoxyCodeLine{167             }
+\DoxyCodeLine{168         \}}
+\DoxyCodeLine{169         }
+\DoxyCodeLine{170     \}}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{175     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_a8023ef51dae839b1bf8204898a5c1133}{dodaj\_danie\_do\_zamowienia}}(\textcolor{keywordtype}{int} poz)}
+\DoxyCodeLine{176     \{}
+\DoxyCodeLine{177         \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.push\_back(\mbox{\hyperlink{class_zamowienie_ad2297f59fd0d8a884270654c2fb90eec}{menu}}-\/>\mbox{\hyperlink{class_menu_a63b445182a938311c038eb29239fcb0b}{lista\_dan}}[poz-\/1]);}
+\DoxyCodeLine{178         \mbox{\hyperlink{class_zamowienie_a4a36034da02d68096ee69fabb4ea9ba0}{pokaz\_zamowione\_rzeczy}}();}
+\DoxyCodeLine{179         \mbox{\hyperlink{class_zamowienie_ad63d35244b397764922c974be5982fed}{oblicz\_czas\_przygotowania}}();}
+\DoxyCodeLine{180         \mbox{\hyperlink{class_zamowienie_a4c9d74c4087ac0dbcc10efb0bc5a3315}{oblicz\_koszt}}();}
+\DoxyCodeLine{181     \}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{186     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_zamowienie_a4c9d74c4087ac0dbcc10efb0bc5a3315}{oblicz\_koszt}}()}
+\DoxyCodeLine{187     \{}
+\DoxyCodeLine{188         \textcolor{keywordtype}{double} koszt = 0;}
+\DoxyCodeLine{189         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.size(); i++)}
+\DoxyCodeLine{190         \{}
+\DoxyCodeLine{191             koszt += \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}[i].cena;}
+\DoxyCodeLine{192         \}}
+\DoxyCodeLine{193         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nKoszt twojego zamowienia: "{}} << koszt<<\textcolor{stringliteral}{"{}zl\(\backslash\)n"{}};}
+\DoxyCodeLine{194         \textcolor{keywordflow}{return} koszt;}
+\DoxyCodeLine{195     \}}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{200     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_zamowienie_ad63d35244b397764922c974be5982fed}{oblicz\_czas\_przygotowania}}()}
+\DoxyCodeLine{201     \{}
+\DoxyCodeLine{202         \textcolor{keywordtype}{double} czas = 0;}
+\DoxyCodeLine{203         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.size(); i++)}
+\DoxyCodeLine{204         \{}
+\DoxyCodeLine{205             czas += \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}[i].czas\_przygotwania;}
+\DoxyCodeLine{206         \}}
+\DoxyCodeLine{207         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nCzas oczekiwania na twoje zamowienie: "{}} << czas<<\textcolor{stringliteral}{"{}sec"{}};}
+\DoxyCodeLine{208         \textcolor{keywordflow}{return} czas;}
+\DoxyCodeLine{209     \}}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{212     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_a4a36034da02d68096ee69fabb4ea9ba0}{pokaz\_zamowione\_rzeczy}}()}
+\DoxyCodeLine{213     \{}
+\DoxyCodeLine{214         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nTwoje zamowienie:\(\backslash\)n"{}};}
+\DoxyCodeLine{215         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}.size(); i++)}
+\DoxyCodeLine{216         \{}
+\DoxyCodeLine{217             std::cout << i + 1 << \textcolor{stringliteral}{"{}. "{}} << \mbox{\hyperlink{class_zamowienie_ad3b0306a65e403f1f072aa84544ad053}{zamowione\_dania}}[i].nazwa<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{218         \}}
+\DoxyCodeLine{219     \}}
+\DoxyCodeLine{221     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zamowienie_a3aefddae084337ed4d6b960f063eebe7}{prezentuj\_aktualne\_zakupy}}()}
+\DoxyCodeLine{222     \{}
+\DoxyCodeLine{223         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nZamowienie nr: "{}}<<\mbox{\hyperlink{class_zamowienie_a9f679144f2d200e1bde96c00e4f7b07f}{ctr}}<<\textcolor{stringliteral}{"{} dla stolika nr : "{}} << \mbox{\hyperlink{class_zamowienie_a3b98b614a486e736c7463a468f08b512}{stolik}}.\mbox{\hyperlink{class_stolik_a110c0792715e03e4254cf27c729a538e}{dostep\_numer\_stolika}}()<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{224         \mbox{\hyperlink{class_zamowienie_a4a36034da02d68096ee69fabb4ea9ba0}{pokaz\_zamowione\_rzeczy}}();}
+\DoxyCodeLine{225         \mbox{\hyperlink{class_zamowienie_ad63d35244b397764922c974be5982fed}{oblicz\_czas\_przygotowania}}();}
+\DoxyCodeLine{226         \mbox{\hyperlink{class_zamowienie_a4c9d74c4087ac0dbcc10efb0bc5a3315}{oblicz\_koszt}}();}
+\DoxyCodeLine{227     \}}
+\DoxyCodeLine{228 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,101 @@
+\hypertarget{class_kuchnia}{}\doxysection{Kuchnia Class Reference}
+\label{class_kuchnia}\index{Kuchnia@{Kuchnia}}
+
+
+{\ttfamily \#include $<$pracownicy.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kuchnia_a3f6d97ebeeedd2408f942b9cf7ec3845}{Kuchnia}} (std\+::string nazwa\+\_\+pliku)
+\item 
+void \mbox{\hyperlink{class_kuchnia_af8f23fe7a7c88ef066ad1d68370d80c2}{pokaz\+\_\+sklad\+\_\+kuchni}} ()
+\item 
+\mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ \mbox{\hyperlink{class_kuchnia_a7b92121e95429c34569049cc85e391a4}{znajdz\+\_\+wolnego\+\_\+kelnera}} ()
+\item 
+\mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ \mbox{\hyperlink{class_kuchnia_a959e37ed9d70b70d43553e28636195fd}{znajdz\+\_\+wolnego\+\_\+kucharza}} ()
+\item 
+void \mbox{\hyperlink{class_kuchnia_ad8e7c1e923bccb85a47b1922fd352605}{zajmij\+\_\+pracownika}} (\mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$pracownik)
+\item 
+\mbox{\hyperlink{class_kuchnia_a0c8a95e523eb7815710842ca3b55d9a4}{$\sim$\+Kuchnia}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ $>$ \mbox{\hyperlink{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}{pracownicy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_kuchnia}{Kuchnia}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kuchnia_a3f6d97ebeeedd2408f942b9cf7ec3845}\label{class_kuchnia_a3f6d97ebeeedd2408f942b9cf7ec3845}} 
+\index{Kuchnia@{Kuchnia}!Kuchnia@{Kuchnia}}
+\index{Kuchnia@{Kuchnia}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{Kuchnia()}{Kuchnia()}}
+{\footnotesize\ttfamily Kuchnia\+::\+Kuchnia (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{class_kuchnia}{Kuchnia}} inicjuje tablice pracownikami podanymi w pliku, ktorego nazwa jest podawana do konstruktora 
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+\_\+pliku} & nazwa pliku z pracownikami \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_kuchnia_a0c8a95e523eb7815710842ca3b55d9a4}\label{class_kuchnia_a0c8a95e523eb7815710842ca3b55d9a4}} 
+\index{Kuchnia@{Kuchnia}!````~Kuchnia@{$\sim$Kuchnia}}
+\index{````~Kuchnia@{$\sim$Kuchnia}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{$\sim$Kuchnia()}{~Kuchnia()}}
+{\footnotesize\ttfamily Kuchnia\+::$\sim$\+Kuchnia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destruktor klasy \mbox{\hyperlink{class_kuchnia}{Kuchnia}} czysci pamiec 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kuchnia_af8f23fe7a7c88ef066ad1d68370d80c2}\label{class_kuchnia_af8f23fe7a7c88ef066ad1d68370d80c2}} 
+\index{Kuchnia@{Kuchnia}!pokaz\_sklad\_kuchni@{pokaz\_sklad\_kuchni}}
+\index{pokaz\_sklad\_kuchni@{pokaz\_sklad\_kuchni}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{pokaz\_sklad\_kuchni()}{pokaz\_sklad\_kuchni()}}
+{\footnotesize\ttfamily void Kuchnia\+::pokaz\+\_\+sklad\+\_\+kuchni (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja wyswietla sklad personelu kuchennego \mbox{\Hypertarget{class_kuchnia_ad8e7c1e923bccb85a47b1922fd352605}\label{class_kuchnia_ad8e7c1e923bccb85a47b1922fd352605}} 
+\index{Kuchnia@{Kuchnia}!zajmij\_pracownika@{zajmij\_pracownika}}
+\index{zajmij\_pracownika@{zajmij\_pracownika}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{zajmij\_pracownika()}{zajmij\_pracownika()}}
+{\footnotesize\ttfamily void Kuchnia\+::zajmij\+\_\+pracownika (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$}]{pracownik }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zajmuje wolnego pracownika 
+\begin{DoxyParams}{Parameters}
+{\em pracownik} & wskaznik na pracownika \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_kuchnia_a7b92121e95429c34569049cc85e391a4}\label{class_kuchnia_a7b92121e95429c34569049cc85e391a4}} 
+\index{Kuchnia@{Kuchnia}!znajdz\_wolnego\_kelnera@{znajdz\_wolnego\_kelnera}}
+\index{znajdz\_wolnego\_kelnera@{znajdz\_wolnego\_kelnera}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{znajdz\_wolnego\_kelnera()}{znajdz\_wolnego\_kelnera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ Kuchnia\+::znajdz\+\_\+wolnego\+\_\+kelnera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja szuka wolnego kelnera \begin{DoxyReturn}{Returns}
+wskaznik na wolnego kelnera. A jesli nie znajdzie wolnego to wtedy zwraca nullptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_kuchnia_a959e37ed9d70b70d43553e28636195fd}\label{class_kuchnia_a959e37ed9d70b70d43553e28636195fd}} 
+\index{Kuchnia@{Kuchnia}!znajdz\_wolnego\_kucharza@{znajdz\_wolnego\_kucharza}}
+\index{znajdz\_wolnego\_kucharza@{znajdz\_wolnego\_kucharza}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{znajdz\_wolnego\_kucharza()}{znajdz\_wolnego\_kucharza()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pracownik}{Pracownik}} $\ast$ Kuchnia\+::znajdz\+\_\+wolnego\+\_\+kucharza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja szuka wolnego kucharza \begin{DoxyReturn}{Returns}
+wskaznik na wolnego kucharza. A jesli nie znajdzie wolnego to wtedy zwraca nullptr 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}\label{class_kuchnia_a3295d6255b748ff118ec5b4faf280820}} 
+\index{Kuchnia@{Kuchnia}!pracownicy@{pracownicy}}
+\index{pracownicy@{pracownicy}!Kuchnia@{Kuchnia}}
+\doxysubsubsection{\texorpdfstring{pracownicy}{pracownicy}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_pracownik}{Pracownik}}$\ast$$>$ Kuchnia\+::pracownicy\hspace{0.3cm}{\ttfamily [protected]}}
+
+Tablica typu vetor przetrzymujaca wskazniki na pracownikow 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/\+Projekt/\+Lokal\+\_\+gastronomiczny/\+Project1/\mbox{\hyperlink{pracownicy_8h}{pracownicy.\+h}}\end{DoxyCompactItemize}

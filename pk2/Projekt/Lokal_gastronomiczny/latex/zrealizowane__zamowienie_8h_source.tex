@@ -1,0 +1,47 @@
+\hypertarget{zrealizowane__zamowienie_8h_source}{}\doxysection{zrealizowane\+\_\+zamowienie.\+h}
+\label{zrealizowane__zamowienie_8h_source}\index{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/zrealizowane\_zamowienie.h@{C:/Users/pawel/source/repos/polsl-\/aei-\/pk2-\/katowice/76b4e121-\/gr11-\/repo/Projekt/Lokal\_gastronomiczny/Project1/zrealizowane\_zamowienie.h}}
+\mbox{\hyperlink{zrealizowane__zamowienie_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{funkcje_8h}{funkcje.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{dania_8h}{dania.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{zamowienia_8h}{zamowienia.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <map>} }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_zrealizowane__zamowienie}{Zrealizowane\_zamowienie}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_obserwator}{Obserwator}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     std::map<Danie, int> \mbox{\hyperlink{class_zrealizowane__zamowienie_abf66111a01a555687908ab67f8626f73}{ilosc}};                    }
+\DoxyCodeLine{18     \textcolor{keyword}{static} std::vector<Zamowienie>\mbox{\hyperlink{class_zrealizowane__zamowienie_ad53eedbdb6dbbe39f749ed9ccc3636ab}{zamowienia}}; }
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zrealizowane__zamowienie_aba1b3d3100daf0f5c0cb6bb6d650c1ef}{aktualizuj}}(\mbox{\hyperlink{class_zamowienie}{Zamowienie}}\& zam)\textcolor{keyword}{ override}}
+\DoxyCodeLine{26 \textcolor{keyword}{    }\{   }
+\DoxyCodeLine{27         \textcolor{keyword}{auto} zamowione = zam.\mbox{\hyperlink{class_zamowienie_a7bba28caf8232dec360d1c52a6dcb36b}{pobierz\_zamowione}}();}
+\DoxyCodeLine{28         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < zamowione.size(); i++)}
+\DoxyCodeLine{29         \{}
+\DoxyCodeLine{30             \mbox{\hyperlink{class_zrealizowane__zamowienie_abf66111a01a555687908ab67f8626f73}{ilosc}}[zamowione[i]]++;}
+\DoxyCodeLine{31         \}}
+\DoxyCodeLine{32     \}}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zrealizowane__zamowienie_a1fcb1dfc9b525ca4e784b5f2ad680b60}{odwolaj}}()\textcolor{keyword}{ override }\{\}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_zrealizowane__zamowienie_a3f8dc7fa950fe10d5077d6fda939d6cb}{pokaz\_statystyki}}()}
+\DoxyCodeLine{39     \{}
+\DoxyCodeLine{40         std::cout << \textcolor{stringliteral}{"{}Statystyki:\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{41         }
+\DoxyCodeLine{42         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&wpis : \mbox{\hyperlink{class_zrealizowane__zamowienie_abf66111a01a555687908ab67f8626f73}{ilosc}})}
+\DoxyCodeLine{43         \{}
+\DoxyCodeLine{44             std::cout << wpis.first.nazwa << \textcolor{stringliteral}{"{} "{}} << wpis.second<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46         Sleep(2000);        }
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_zamowienie}{Zamowienie}}; }
+\DoxyCodeLine{50 \};}
+
+\end{DoxyCode}
