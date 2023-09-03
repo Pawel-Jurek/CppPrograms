@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\pawel\\source\\repos\\polsl-aei-pk4-katowice\\a13b7b72-gr11-repo\\lab1\\lab1\\lab1\\pow.ixx",
+        "ProvidedModule": "Pow",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
