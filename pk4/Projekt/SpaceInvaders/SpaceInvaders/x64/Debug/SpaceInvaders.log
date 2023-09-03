@@ -1,0 +1,24 @@
+﻿  Highscore.cpp
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\DrawText.h(14,24): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\DrawText.h(14,21): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\Highscore.cpp(25,30): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\Highscore.cpp(26,37): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\Highscore.cpp(64,37): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\Highscore.cpp(65,37): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\Highscore.cpp(117,32): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+  SpaceInvaders.cpp
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\SpaceShip.h(27,40): warning C4244: "return": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\DrawText.h(14,24): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\DrawText.h(14,21): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\SpaceInvaders.cpp(40,91): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\SpaceInvaders\SpaceInvaders.cpp(44,190): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+  Generowanie kodu...
+  SpaceInvaders.vcxproj -> C:\Users\pawel\source\repos\polsl-aei-pk4-katowice\a13b7b72-gr11-repo\Projekt\SpaceInvaders\x64\Debug\SpaceInvaders.exe
